@@ -140,23 +140,6 @@ $custom-utilities: (
 $utilities: map-merge($utilities, $custom-utilities);
 
 // // MODIFIED UTILITIES
-$modified-utilities: (
-  "border-bottom": (
-    property: border-bottom,
-    values: (
-      null: $border-width dotted $border-color,
-      0: 0,
-    ),
-  ),
-  "display":
-    map-merge(
-      map-get($utilities, "display"),
-      (
-        class: dis,
-      )
-    ),
-);
-$utilities: map-merge($utilities, $modified-utilities);
 
 @import "../node_modules/bootstrap/scss/utilities/api";
 // -----
