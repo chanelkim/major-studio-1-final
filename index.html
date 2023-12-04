@@ -12,87 +12,121 @@
     />
   </head>
 
-  <body class="bg-light">
+  <body class="bg-primary-bg">
     <!-- nav -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light p-4">
-      <a class="navbar-brand" href="#">Index</a>
+    <nav
+      class="navbar fixed-top navbar-expand-md navbar-light bg-light p-4 align-self-center"
+    >
+      <a
+        class="navbar-brand align-middle"
+        id="navbar-brand"
+        href="#footer-sidebar"
+        data-bs-toggle="offcanvas"
+        role="button"
+        aria-controls="sidebar"
+        >Index
+        <img
+          src="public/arrow.svg"
+          alt="arrow"
+          width="24"
+          height="24"
+          class="d-inline-block p-1"
+        />
+        of American Design
+      </a>
       <button
         class="navbar-toggler p-0 border-0"
         type="button"
         data-toggle="offcanvas"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon align-middle"></span>
       </button>
-      <!-- sidebar content -->
+      <!-- sidebar links -->
       <div
-        class="navbar-collapse offcanvas-collapse bg-light"
-        id="sidebar-content"
+        class="navbar-collapse offcanvas-collapse bg-light align-self-center"
+        id="navbarNav"
       >
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Treemap <span class="sr-only">(current)</span></a
+          <li class="nav-item ps-2 pe-2">
+            <a
+              class="nav-link"
+              id="navbarNav-link"
+              :active
+              aria-current="page"
+              href="#catalog"
+              >Catalog <span class="visually-hidden">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">State Map</a>
+          <li class="nav-item ps-2 pe-2">
+            <a class="nav-link" id="navbarNav-link" href="#treemap"
+              >Contributors</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Objects</a>
+          <li class="nav-item ps-2 pe-2">
+            <a class="nav-link" id="navbarNav-link" href="#statemap">Map</a>
+          </li>
+          <li class="nav-item ps-2 pe-2">
+            <a class="nav-link" id="navbarNav-link" href="#objects">Home</a>
           </li>
         </ul>
       </div>
-      <!-- end sidebar content -->
+      <!-- sidebar links end -->
     </nav>
-    <!-- end nav -->
 
-    <!-- catalog design test -->
-    <main role="main" class="container bg-primary-bg">
-      <div id="catalog" class="d-flex align-items-center">
-        <div id="part">
-          <div id="theme">
-            <div id="cats" class="btn-group" role="group" aria-label="">
-              <div id="cat">
-                <div id="cat-token" type="button" class="btn btn-cc-red">
-                  <b id="category">category</b>
-                </div>
-                <div id="subcats">
-                  <div id="subcat">
-                    <div
-                      id="subcat-token"
-                      type="button"
-                      class="btn btn-cc-yellow"
-                    >
-                      <div id="subcategory">Subcategory</div>
-                    </div>
-                    <div id="types">
+    <!-- main -->
+    <main role="main" class="container-xl bg-primary-bg p-4" id="main">
+      <!-- catalog test -->
+      <section class="catalog">
+        <div>
+          <h1>Catalog (Qualitative)</h1>
+          <p>Grouping objects of the Index by theme</p>
+        </div>
+        <div id="catalog" class="d-flex align-items-center">
+          <div id="part">
+            <div id="theme">
+              <div id="cats" class="btn-group" role="group" aria-label="">
+                <div id="cat">
+                  <div id="cat-token" type="button" class="btn btn-cc-red">
+                    <b id="category">category</b>
+                  </div>
+                  <div id="subcats">
+                    <div id="subcat">
                       <div
-                        id="type-token"
+                        id="subcat-token"
                         type="button"
-                        class="btn btn-cc-brown"
+                        class="btn btn-cc-yellow"
                       >
-                        <div id="type">Type</div>
+                        <div id="subcategory">Subcategory</div>
                       </div>
-                      <div
-                        id="type-token"
-                        type="button"
-                        class="btn btn-cc-brown"
-                      >
-                        <div id="type">Type</div>
-                      </div>
-                      <div
-                        id="type-token"
-                        type="button"
-                        class="btn btn-cc-brown"
-                      >
-                        <div id="type">Type</div>
-                      </div>
-                      <div
-                        id="type-token"
-                        type="button"
-                        class="btn btn-cc-brown"
-                      >
-                        <div id="type">Type</div>
+                      <div id="types">
+                        <div
+                          id="type-token"
+                          type="button"
+                          class="btn btn-cc-brown"
+                        >
+                          <div id="type">Type</div>
+                        </div>
+                        <div
+                          id="type-token"
+                          type="button"
+                          class="btn btn-cc-brown"
+                        >
+                          <div id="type">Type</div>
+                        </div>
+                        <div
+                          id="type-token"
+                          type="button"
+                          class="btn btn-cc-brown"
+                        >
+                          <div id="type">Type</div>
+                        </div>
+                        <div
+                          id="type-token"
+                          type="button"
+                          class="btn btn-cc-brown"
+                        >
+                          <div id="type">Type</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -101,53 +135,169 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- treemap test -->
+      <section class="treemap">
+        <div>
+          <h1>
+            Contributors<br />
+            aka Treemap (Quantitative)
+          </h1>
+          <p>Grouping objects of the Index by contributor or artist</p>
+        </div>
+        <div id="treemap" class="d-flex align-items-center"></div>
+      </section>
+      <!-- statemap test -->
+      <section class="statemap">
+        <div>
+          <h1>
+            Map<br />
+            aka Statemap (Spatial)
+          </h1>
+          <p>Locating objects of the Index to U.S. geography</p>
+        </div>
+        <div id="statemap" class="d-flex align-items-center"></div>
+      </section>
+      <!-- objects test -->
+      <section class="objects">
+        <div>
+          <h1>
+            Home<br />
+            aka Objects (Spatial)
+          </h1>
+          <p>
+            Introduction and cards of all objects by objectid (endless scroll)
+          </p>
+        </div>
+        <div id="objects" class="d-flex align-items-center"></div>
+      </section>
     </main>
 
-    <!-- BUTTON GROUP -->
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <button type="button" class="btn btn-primary">Left</button>
-      <button type="button" class="btn btn-warning">Middle</button>
-      <button type="button" class="btn btn-success">Right</button>
-    </div>
-
-    <!-- CUSTOM SVG -->
-    <svg
-      width="41"
-      height="40"
-      viewBox="0 0 41 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 20.2308L39.6883 20.2308M19.739 40C19.739 23.0769 40 20.2308 40 20.2308C40 20.2308 19.739 15.6923 19.739 0"
-        stroke="black"
-        stroke-width="2"
-        stroke-linejoin="round"
-      />
-    </svg>
-
     <!-- footer -->
-    <section class="py-5 bg-light text-muted">
-      <div class="container-lg text-center">
+    <footer class="d-flex bg-light text-black fixed-bottom" id="footer">
+      <div class="container-fluid d-flex m-0 align-items-center">
         <!-- open sidebar / offcanvas -->
-        <a
-          href="#sidebar"
-          class="d-block"
-          data-bs-toggle="offcanvas"
-          role="button"
-          aria-controls="sidebar"
-          >About Project</a
-        >
-        <!-- offcanvas div -->
-        <div
-          class="offcanvas offcanvas-bottom"
-          tabindex="-1"
-          id="sidebar"
-          aria-labelledby="sidebar-label"
-        ></div>
+        <div class="d-flex ms-3 p-0 align-items-center">
+          <a
+            href="https://www.nga.gov/"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="public/nga.svg"
+              alt="National Gallery of Art logo"
+              width="60"
+              height="44"
+              class="align-self-center"
+          /></a>
+          <p class="align-center mb-0 ps-2 pe-2" height="44" id="footer-x">X</p>
+          <a
+            href="https://www.newschool.edu/parsons/ms-data-visualization/"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="public/msdv.svg"
+              alt="The New School Parsons Data Visualization Masters of Science Homepage"
+              width="60"
+              height="44"
+              class="align-self-center"
+          /></a>
+        </div>
+        <div class="d-flex ms-auto pe-3 text-start">
+          <a
+            href="#footer-sidebar"
+            class="text-start text-black"
+            id="footer-sidebar-button"
+            data-bs-toggle="offcanvas"
+            role="button"
+            aria-controls="sidebar"
+            >About</a
+          >
+        </div>
       </div>
-    </section>
+      <!-- offcanvas div -->
+      <div
+        class="offcanvas offcanvas-bottom dark"
+        tabindex="-1"
+        id="footer-sidebar"
+        aria-labelledby="sidebar-label"
+      >
+        <div class="offcanvas-header bg-white ms-2">
+          <p class="offcanvas-title" id="sidebar-label">About</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body bg-light text-start p-4">
+          <body class="">
+            <div>
+              <h3>The Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+                corporis, nemo quo vel veniam eveniet doloribus, consequuntur ea
+                ducimus consequatur et. Maiores obcaecati, nulla consequuntur
+                fuga animi explicabo laboriosam. Soluta.
+              </p>
+            </div>
+            <div>
+              <h3>The Partnership</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+                corporis, nemo quo vel veniam eveniet doloribus, consequuntur ea
+                ducimus consequatur et. Maiores obcaecati, nulla consequuntur
+                fuga animi explicabo laboriosam. Soluta.
+              </p>
+            </div>
+            <div>
+              <h3>The Designer</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+                corporis, nemo quo vel veniam eveniet doloribus, consequuntur ea
+                ducimus consequatur et. Maiores obcaecati, nulla consequuntur
+                fuga animi explicabo laboriosam. Soluta.
+              </p>
+            </div>
+            <div class="d-flex p-0 align-items-center">
+              <a
+                href="https://www.nga.gov/"
+                class="external"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="public/nga.svg"
+                  alt="National Gallery of Art logo"
+                  width="60"
+                  height="44"
+                  class="align-self-center"
+              /></a>
+              <p class="align-center mb-0 ps-2 pe-2" height="44" id="footer-x">
+                X
+              </p>
+              <a
+                href="https://www.newschool.edu/parsons/ms-data-visualization/"
+                class="external"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="public/msdv.svg"
+                  alt="The New School Parsons Data Visualization Masters of Science Homepage"
+                  width="60"
+                  height="44"
+                  class="align-self-center"
+              /></a>
+            </div>
+          </body>
+        </div>
+      </div>
+    </footer>
     <!-- BOOTSTRAP + POPPER -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

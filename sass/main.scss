@@ -47,6 +47,83 @@
     url("/fonts/Agrandir/Agrandir-Grand.ttf") format("truetype");
   font-weight: normal;
 }
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 6rem;
+}
+
+body,
+#footer,
+.offcanvas-body {
+  font-family: "NeueMontreal-Regular", sans-serif;
+}
+
+#footer {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.offcanvas-body h3 {
+  letter-spacing: -0.04rem;
+}
+
+.offcanvas-body div {
+  padding-bottom: 2rem;
+}
+
+.offcanvas-body p {
+  letter-spacing: -0.01rem;
+}
+
+section {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-family: "NeueMontreal-Light", sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: -0.05rem;
+}
+
+#navbar-brand {
+  font-family: "FormulaCondensed-Regular", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  letter-spacing: 0.02rem;
+  color: black;
+}
+
+#footer-sidebar-button,
+#sidebar-label {
+  font-family: "NeueMontreal-Light", sans-serif;
+  letter-spacing: 0.02rem;
+}
+
+#footer-x {
+  font-family: "NeueMontreal-Light", sans-serif;
+}
+
+#navbarNav-link {
+  font-family: "NeueMontreal-Light", sans-serif;
+}
+#navbarNav-link:active {
+  font-family: "NeueMontreal-Regular", sans-serif;
+}
+
 // -----
 // 1. Import Functions File
 @import "../node_modules/bootstrap/scss/functions";
@@ -65,6 +142,9 @@
 // LINKS
 $link-decoration: none;
 $link-hover-decoration: underline;
+.nav-link :hover {
+  text-decoration: underline;
+}
 
 // BREAKPOINTS
 
