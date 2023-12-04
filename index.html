@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TEST FOR FINAL</title>
     <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/catalog.css" />
     <link
       rel="stylesheet"
@@ -43,30 +44,34 @@
       </button>
       <!-- sidebar links -->
       <div
-        class="navbar-collapse offcanvas-collapse bg-light align-self-center"
+        class="navbar-collapse offcanvas-collapse bg-light justify-content-end"
         id="navbarNav"
       >
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
           <li class="nav-item ps-2 pe-2">
             <a
               class="nav-link"
               id="navbarNav-link"
               :active
               aria-current="page"
-              href="#catalog"
+              href="#catalog-section"
               >Catalog <span class="visually-hidden">(current)</span></a
             >
           </li>
           <li class="nav-item ps-2 pe-2">
-            <a class="nav-link" id="navbarNav-link" href="#treemap"
+            <a class="nav-link" id="navbarNav-link" href="#treemap-section"
               >Contributors</a
             >
           </li>
           <li class="nav-item ps-2 pe-2">
-            <a class="nav-link" id="navbarNav-link" href="#statemap">Map</a>
+            <a class="nav-link" id="navbarNav-link" href="#statemap-section"
+              >Map</a
+            >
           </li>
           <li class="nav-item ps-2 pe-2">
-            <a class="nav-link" id="navbarNav-link" href="#objects">Home</a>
+            <a class="nav-link" id="navbarNav-link" href="#objects-section"
+              >Home</a
+            >
           </li>
         </ul>
       </div>
@@ -74,59 +79,66 @@
     </nav>
 
     <!-- main -->
-    <main role="main" class="container-xl bg-primary-bg p-4" id="main">
+    <main role="main" class="bg-primary-bg" id="main">
       <!-- catalog test -->
-      <section class="catalog">
-        <div>
+      <section
+        class="container-fluid"
+        id="catalog-section"
+        title="catalog-section"
+      >
+        <div class="section-head">
           <h1>Catalog (Qualitative)</h1>
           <p>Grouping objects of the Index by theme</p>
         </div>
-        <div id="catalog" class="d-flex align-items-center">
-          <div id="part">
-            <div id="theme">
-              <div id="cats" class="btn-group" role="group" aria-label="">
-                <div id="cat">
-                  <div id="cat-token" type="button" class="btn btn-cc-red">
-                    <b id="category">category</b>
-                  </div>
-                  <div id="subcats">
-                    <div id="subcat">
+        <div class="" width="100%" height="100%">
+          <svg class="svg" id="catalog-svg">
+            <rect x="0" y="0" fill="yellow"></rect>
+          </svg>
+        </div>
+        <div id="part">
+          <div id="theme">
+            <div id="cats" class="btn-group" role="group" aria-label="">
+              <div id="cat">
+                <div id="cat-token" type="button" class="btn btn-cc-red">
+                  <b id="category">category</b>
+                </div>
+                <div id="subcats">
+                  <div id="subcat">
+                    <div
+                      id="subcat-token"
+                      type="button"
+                      class="btn btn-cc-yellow"
+                    >
+                      <div id="subcategory">Subcategory</div>
+                    </div>
+                    <div id="types">
                       <div
-                        id="subcat-token"
+                        id="type-token"
                         type="button"
-                        class="btn btn-cc-yellow"
+                        class="btn btn-cc-brown"
                       >
-                        <div id="subcategory">Subcategory</div>
+                        <div id="type">Type</div>
                       </div>
-                      <div id="types">
-                        <div
-                          id="type-token"
-                          type="button"
-                          class="btn btn-cc-brown"
-                        >
-                          <div id="type">Type</div>
-                        </div>
-                        <div
-                          id="type-token"
-                          type="button"
-                          class="btn btn-cc-brown"
-                        >
-                          <div id="type">Type</div>
-                        </div>
-                        <div
-                          id="type-token"
-                          type="button"
-                          class="btn btn-cc-brown"
-                        >
-                          <div id="type">Type</div>
-                        </div>
-                        <div
-                          id="type-token"
-                          type="button"
-                          class="btn btn-cc-brown"
-                        >
-                          <div id="type">Type</div>
-                        </div>
+                      <div
+                        id="type-token"
+                        type="button"
+                        class="btn btn-cc-brown"
+                      >
+                        <div id="type">Type</div>
+                      </div>
+                      <div
+                        id="type-token"
+                        type="button"
+                        class="btn btn-cc-brown"
+                      >
+                        <div id="type">Type</div>
+                      </div>
+                      <div
+                        id="type-token"
+                        type="button"
+                        class="btn btn-cc-brown"
+                      >
+                        <div id="type">Type</div>
                       </div>
                     </div>
                   </div>
@@ -137,30 +149,50 @@
         </div>
       </section>
       <!-- treemap test -->
-      <section class="treemap">
-        <div>
+      <section
+        class="container-fluid"
+        id="treemap-section"
+        title="treemap-section"
+      >
+        <div class="section-head">
           <h1>
             Contributors<br />
             aka Treemap (Quantitative)
           </h1>
           <p>Grouping objects of the Index by contributor or artist</p>
         </div>
-        <div id="treemap" class="d-flex align-items-center"></div>
+        <div class="" width="100%" height="100%">
+          <svg class="svg" id="treemap-svg">
+            <rect x="0" y="0" fill="green"></rect>
+          </svg>
+        </div>
       </section>
       <!-- statemap test -->
-      <section class="statemap">
-        <div>
+      <section
+        class="container-fluid"
+        id="statemap-section"
+        title="statemap-section"
+      >
+        <div class="section-head">
           <h1>
             Map<br />
             aka Statemap (Spatial)
           </h1>
           <p>Locating objects of the Index to U.S. geography</p>
         </div>
-        <div id="statemap" class="d-flex align-items-center"></div>
+        <div class="" width="100%" height="100%">
+          <svg class="svg" id="statemap-svg">
+            <rect x="0" y="0" fill="red"></rect>
+          </svg>
+        </div>
       </section>
       <!-- objects test -->
-      <section class="objects">
-        <div>
+      <section
+        class="container-fluid"
+        id="objects-section"
+        title="objects-section"
+      >
+        <div class="section-head">
           <h1>
             Home<br />
             aka Objects (Spatial)
@@ -169,12 +201,16 @@
             Introduction and cards of all objects by objectid (endless scroll)
           </p>
         </div>
-        <div id="objects" class="d-flex align-items-center"></div>
+        <div class="" width="100%" height="100%">
+          <svg class="svg" id="objects-svg">
+            <rect x="0" y="0" fill="blue"></rect>
+          </svg>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer class="d-flex bg-light text-black fixed-bottom" id="footer">
+    <footer class="d-flex bg-light text-black" id="footer">
       <div class="container-fluid d-flex m-0 align-items-center">
         <!-- open sidebar / offcanvas -->
         <div class="d-flex ms-3 p-0 align-items-center">
@@ -327,24 +363,27 @@
         </div>
       </div>
     </footer>
+
+    <!-- scripts -->
+    <!-- MAIN -->
+    <script src="/main.js"></script>
+
     <!-- BOOTSTRAP + POPPER -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="scripts/bootstrap.js"></script>
     <!-- D3 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!-- MAIN -->
-    <script src="js/main.js"></script>
     <!-- CATALOG -->
-    <!-- <script src="js/catalog.js"></script> -->
+    <script src="scripts/catalog.js"></script>
     <!-- TREEMAP -->
-    <!-- <script src="js/treemap.js"></script> -->
+    <script src="scripts/treemap.js"></script>
     <!-- STATE MAP -->
-    <!-- <script src="js/statemap.js"></script> -->
+    <script src="scripts/statemap.js"></script>
     <!-- OBJECTS -->
-    <!-- <script src="js/objects.js"></script> -->
+    <script src="scripts/objects.js"></script>
   </body>
 </html>

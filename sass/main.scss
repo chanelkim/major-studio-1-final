@@ -1,6 +1,6 @@
 /* ORDER MATTERS */
 
-// load custom font
+// Load custom font
 @font-face {
   font-family: "Formula Condensed";
   src: url("/fonts/FormulaCondensed/FormulaCondensed-Black.otf")
@@ -48,43 +48,25 @@
   font-weight: normal;
 }
 
+// -----
+// 1. Import Functions File
+@import "../node_modules/bootstrap/scss/functions";
+// (redefine variables not dependent on anything else)
+
+// GLOBAL VARIABLES
+// Main Styles
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  padding: 0;
+  margin: 0;
 }
 
+// FONT FAMILY - FONT SIZES - HEADINGS
 body {
   padding-top: 6rem;
-}
-
-body,
-#footer,
-.offcanvas-body {
   font-family: "NeueMontreal-Regular", sans-serif;
 }
-
-#footer {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-}
-
-.offcanvas-body h3 {
-  letter-spacing: -0.04rem;
-}
-
-.offcanvas-body div {
-  padding-bottom: 2rem;
-}
-
-.offcanvas-body p {
-  letter-spacing: -0.01rem;
-}
-
-section {
-  display: block;
-  padding-bottom: 2rem;
-}
-
 h1 {
   font-family: "NeueMontreal-Light", sans-serif;
   font-size: 3rem;
@@ -95,28 +77,18 @@ p {
   letter-spacing: -0.05rem;
 }
 
+// Navbar
+.navbar-nav .nav-link {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  letter-spacing: 0.02rem;
+  color: black;
+}
 #navbar-brand {
   font-family: "FormulaCondensed-Regular", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-.navbar-nav .nav-link {
-  font-family: "NeueMontreal-Regular", sans-serif;
-  letter-spacing: 0.02rem;
-  color: black;
-}
-
-#footer-sidebar-button,
-#sidebar-label {
-  font-family: "NeueMontreal-Light", sans-serif;
-  letter-spacing: 0.02rem;
-}
-
-#footer-x {
-  font-family: "NeueMontreal-Light", sans-serif;
-}
-
 #navbarNav-link {
   font-family: "NeueMontreal-Light", sans-serif;
 }
@@ -124,20 +96,56 @@ p {
   font-family: "NeueMontreal-Regular", sans-serif;
 }
 
-// -----
-// 1. Import Functions File
-@import "../node_modules/bootstrap/scss/functions";
-// (redefine variables not dependent on anything else)
+// Main
+#main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 4rem;
+}
+section {
+  // margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.section-head {
+  padding-top: 4rem;
+}
 
-// GLOBAL VARIABLES
+// Footer
+#footer {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+#footer-sidebar-button {
+  font-family: "NeueMontreal-Light", sans-serif;
+  letter-spacing: 0.02rem;
+}
+#footer-x {
+  font-family: "NeueMontreal-Light", sans-serif;
+}
+
+// Offcanvas
+.offcanvas-body {
+  font-family: "NeueMontreal-Regular", sans-serif;
+}
+.offcanvas-body h3 {
+  letter-spacing: -0.04rem;
+}
+.offcanvas-body div {
+  padding-bottom: 2rem;
+}
+.offcanvas-body p {
+  letter-spacing: -0.01rem;
+}
+
+// Sidebar
+#sidebar-label {
+  font-family: "NeueMontreal-Light", sans-serif;
+  letter-spacing: 0.02rem;
+}
 
 // THEME COLORS VARIABLES
-
-// FONT FAMILY
-
-// FONT SIZES
-
-// HEADINGS
 
 // LINKS
 $link-decoration: none;
@@ -167,6 +175,8 @@ $btn-border-radius-lg: 0rem;
 $btn-border-radius-sm: 0rem;
 
 // MIXIN TEXT-TRUNCATE
+
+// MIXIN CONTAINER PADDING
 
 // ADD CUSTOM COLORS
 $custom-colors: (

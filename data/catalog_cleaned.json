@@ -1,0 +1,3033 @@
+[
+  {
+    "catalogid": 1,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Samplers"],
+    "section": 1
+  },
+  {
+    "catalogid": 2,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Embroidered", "Pictures"],
+    "section": 1
+  },
+  {
+    "catalogid": 3,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Needlework", "Crewel", "Embroidery"],
+    "section": 1
+  },
+  {
+    "catalogid": 4,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Hooked", "Embroidered", "Rugs"],
+    "section": 1
+  },
+  {
+    "catalogid": 5,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Applique", "Pieced", "Quilts"],
+    "section": 1
+  },
+  {
+    "catalogid": 6,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Lace", "Crocheting", "Knitting", "Knotting"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 7,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Woven", "Textiles"],
+    "type": ["Linen", "Cotton", "Wool", "Silk"],
+    "section": 1
+  },
+  {
+    "catalogid": 8,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Woven", "Textiles"],
+    "type": ["Woven", "Coverlets", "Four", "Harness"],
+    "section": 1
+  },
+  {
+    "catalogid": 9,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Woven", "Textiles"],
+    "type": ["Woven", "Coverlets", "Jacquard"],
+    "section": 1
+  },
+  {
+    "catalogid": 10,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Woven", "Textiles"],
+    "type": ["Rugs", "Carpets"],
+    "section": 1
+  },
+  {
+    "catalogid": 11,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Printed", "Dyed", "Textiles"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 12,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Flags"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 13,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Headwear"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 14,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Neckwear"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 15,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Undergarments", "Nightwear"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 16,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Women", "Apparel"],
+    "type": ["Waist"],
+    "section": 1
+  },
+  {
+    "catalogid": 17,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Women", "Apparel"],
+    "type": ["Aprons"],
+    "section": 1
+  },
+  {
+    "catalogid": 18,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Women", "Apparel"],
+    "type": ["Dresses", "Coats"],
+    "section": 1
+  },
+  {
+    "catalogid": 19,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Men", "Apparel"],
+    "type": ["Waist"],
+    "section": 1
+  },
+  {
+    "catalogid": 20,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Men", "Apparel"],
+    "type": ["Trousers"],
+    "section": 1
+  },
+  {
+    "catalogid": 21,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Men", "Apparel"],
+    "type": ["Suits", "Coats"],
+    "section": 1
+  },
+  {
+    "catalogid": 22,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Men", "Apparel"],
+    "type": ["Uniforms"],
+    "section": 1
+  },
+  {
+    "catalogid": 23,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Infants", "'", "Children", "Apparel"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 24,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Footwear"],
+    "type": ["Stockings"],
+    "section": 1
+  },
+  {
+    "catalogid": 25,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Footwear"],
+    "type": ["Skates", "Clogs", "Spurs"],
+    "section": 1
+  },
+  {
+    "catalogid": 26,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Footwear"],
+    "type": ["Women", "Shoes"],
+    "section": 1
+  },
+  {
+    "catalogid": 27,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Footwear"],
+    "type": ["Men", "Shoes"],
+    "section": 1
+  },
+  {
+    "catalogid": 28,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume"],
+    "subcategory": ["Footwear"],
+    "type": ["Children", "Shoes"],
+    "section": 1
+  },
+  {
+    "catalogid": 29,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Belts"],
+    "section": 1
+  },
+  {
+    "catalogid": 30,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Bootjacks", "Shoe", "Forms"],
+    "section": 1
+  },
+  {
+    "catalogid": 31,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Buttons"],
+    "section": 1
+  },
+  {
+    "catalogid": 32,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Canes", "Walking", "Sticks"],
+    "section": 1
+  },
+  {
+    "catalogid": 33,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Card", "Cases", "Trays"],
+    "section": 1
+  },
+  {
+    "catalogid": 34,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Collar", "Cuff", "Box"],
+    "section": 1
+  },
+  {
+    "catalogid": 35,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Fans"],
+    "section": 1
+  },
+  {
+    "catalogid": 36,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Garters", "Suspenders"],
+    "section": 1
+  },
+  {
+    "catalogid": 37,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Gloves", "Mitts", "Mittens"],
+    "section": 1
+  },
+  {
+    "catalogid": 38,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Handbags", "Purses", "Satchels", "Wallets"],
+    "section": 1
+  },
+  {
+    "catalogid": 39,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Muffs", "Parasols", "Umbrellas"],
+    "section": 1
+  },
+  {
+    "catalogid": 40,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Pipes"],
+    "section": 1
+  },
+  {
+    "catalogid": 41,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Pockets", "Sachets"],
+    "section": 1
+  },
+  {
+    "catalogid": 42,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Costume", "Accessories"],
+    "type": ["Spectacles", "Eyeglasses"],
+    "section": 1
+  },
+  {
+    "catalogid": 43,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Medical", "Personal", "Hygiene", "Instruments"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 44,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Costume", "Accessories"],
+    "subcategory": ["Restraining", "Irons", "Clothing"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 45,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Sets", "Jewelry"],
+    "type": [],
+    "section": 1
+  },
+  {
+    "catalogid": 46,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Bouquet", "Holders"],
+    "section": 1
+  },
+  {
+    "catalogid": 47,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Bracelets"],
+    "section": 1
+  },
+  {
+    "catalogid": 48,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Brooches"],
+    "section": 1
+  },
+  {
+    "catalogid": 49,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Buckles"],
+    "section": 1
+  },
+  {
+    "catalogid": 50,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Combs", "Hair", "Ornaments"],
+    "section": 1
+  },
+  {
+    "catalogid": 51,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Cufflinks"],
+    "section": 1
+  },
+  {
+    "catalogid": 52,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Earrings"],
+    "section": 1
+  },
+  {
+    "catalogid": 53,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Necklaces"],
+    "section": 1
+  },
+  {
+    "catalogid": 54,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Pins"],
+    "section": 1
+  },
+  {
+    "catalogid": 55,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Rings"],
+    "section": 1
+  },
+  {
+    "catalogid": 56,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Jewelry"],
+    "subcategory": ["Jewelry"],
+    "type": ["Watches", "Fobs"],
+    "section": 1
+  },
+  {
+    "catalogid": 57,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 1
+  },
+  {
+    "catalogid": 58,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 1
+  },
+  {
+    "catalogid": 59,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Fracturs", "Paintings"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 60,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Wood", "Carvings", "Weathervanes"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 61,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Furniture", "Decorative", "Accessories"],
+    "type": ["Furniture"],
+    "section": 2
+  },
+  {
+    "catalogid": 62,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Furniture", "Decorative", "Accessories"],
+    "type": ["Boxes", "Decorative", "Accessories"],
+    "section": 2
+  },
+  {
+    "catalogid": 63,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Ceramics", "Chalkware"],
+    "type": ["Ceramics"],
+    "section": 2
+  },
+  {
+    "catalogid": 64,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Ceramics", "Chalkware"],
+    "type": ["Chalkware"],
+    "section": 2
+  },
+  {
+    "catalogid": 65,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Textiles"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 66,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Domestic", "Utensils", "Tools", "Hardware"],
+    "type": ["Domestic", "Utensils"],
+    "section": 2
+  },
+  {
+    "catalogid": 67,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Domestic", "Utensils", "Tools", "Hardware"],
+    "type": ["Tools"],
+    "section": 2
+  },
+  {
+    "catalogid": 68,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Pennsylvania", "German"],
+    "subcategory": ["Domestic", "Utensils", "Tools", "Hardware"],
+    "type": ["Hardware"],
+    "section": 2
+  },
+  {
+    "catalogid": 69,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Zoar"],
+    "subcategory": ["Painting"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 70,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Zoar"],
+    "subcategory": ["Furniture"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 71,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Zoar"],
+    "subcategory": ["Ceramics"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 72,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Zoar"],
+    "subcategory": ["Textiles", "Costume"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 73,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Zoar"],
+    "subcategory": ["Domestic", "Utensils", "Tools"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 74,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Economy"],
+    "subcategory": [],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 75,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Amana"],
+    "subcategory": [],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 76,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Bishop", "Hill"],
+    "subcategory": ["Furniture"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 77,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Bishop", "Hill"],
+    "subcategory": ["Costume"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 78,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Bishop", "Hill"],
+    "subcategory": ["Domestic", "Utensils", "Tools"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 79,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Art", "Architecture"],
+    "type": ["Art"],
+    "section": 2
+  },
+  {
+    "catalogid": 80,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Art", "Architecture"],
+    "type": ["Architectural", "Details"],
+    "section": 2
+  },
+  {
+    "catalogid": 81,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Chairs"],
+    "section": 2
+  },
+  {
+    "catalogid": 82,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Tables", "Benches", "Stools"],
+    "section": 2
+  },
+  {
+    "catalogid": 83,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Chests", "Cupboards", "Cabinets"],
+    "section": 2
+  },
+  {
+    "catalogid": 84,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Beds"],
+    "section": 2
+  },
+  {
+    "catalogid": 85,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Furnishing", "Accessories"],
+    "section": 2
+  },
+  {
+    "catalogid": 86,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Furniture", "Furnishing", "Accessories"],
+    "type": ["Clocks"],
+    "section": 2
+  },
+  {
+    "catalogid": 87,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Textiles", "Costume"],
+    "type": ["Textiles"],
+    "section": 2
+  },
+  {
+    "catalogid": 88,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Textiles", "Costume"],
+    "type": ["Costume", "Costume", "Accessories"],
+    "section": 2
+  },
+  {
+    "catalogid": 89,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Shaker"],
+    "subcategory": ["Domestic", "Utensils", "Tools"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 90,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Quaker"],
+    "subcategory": ["Costume"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 91,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Mormon"],
+    "subcategory": [],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 92,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Art", "Architecture"],
+    "type": ["Paintings", "Sculpture"],
+    "section": 2
+  },
+  {
+    "catalogid": 93,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Art", "Architecture"],
+    "type": ["Interiors", "Architectural", "Details"],
+    "section": 2
+  },
+  {
+    "catalogid": 94,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Art", "Architecture"],
+    "type": ["Maps"],
+    "section": 2
+  },
+  {
+    "catalogid": 95,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Furniture", "Mirrors"],
+    "type": ["Furniture"],
+    "section": 2
+  },
+  {
+    "catalogid": 96,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Furniture", "Mirrors"],
+    "type": ["Mirrors"],
+    "section": 2
+  },
+  {
+    "catalogid": 97,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Textiles", "Costume"],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 98,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Domestic", "Utensils", "Tools"],
+    "type": ["Lighting", "Devices"],
+    "section": 2
+  },
+  {
+    "catalogid": 99,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Domestic", "Utensils", "Tools"],
+    "type": ["Domestic", "Utensils", "Tools"],
+    "section": 2
+  },
+  {
+    "catalogid": 100,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Saddlery", "Weapons"],
+    "type": ["Saddles", "Leatherwork"],
+    "section": 2
+  },
+  {
+    "catalogid": 101,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Saddlery", "Weapons"],
+    "type": ["Spurs"],
+    "section": 2
+  },
+  {
+    "catalogid": 102,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Saddlery", "Weapons"],
+    "type": ["Bits"],
+    "section": 2
+  },
+  {
+    "catalogid": 103,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Saddlery", "Weapons"],
+    "type": ["Weapons"],
+    "section": 2
+  },
+  {
+    "catalogid": 104,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Musical", "Instruments"],
+    "type": ["Bells"],
+    "section": 2
+  },
+  {
+    "catalogid": 105,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["Spanish", "Southwest"],
+    "subcategory": ["Musical", "Instruments"],
+    "type": ["Stringed", "Instruments"],
+    "section": 2
+  },
+  {
+    "catalogid": 106,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["California", "Petroglyphs"],
+    "subcategory": [],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 107,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": ["American", "Indian"],
+    "subcategory": [],
+    "type": [],
+    "section": 2
+  },
+  {
+    "catalogid": 108,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 2
+  },
+  {
+    "catalogid": 109,
+    "theme": ["Art", "Design", "Utopian", "Religious", "Communities"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 2
+  },
+  {
+    "catalogid": 110,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Rooms", "Domestic", "Interiors"],
+    "section": 3
+  },
+  {
+    "catalogid": 111,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Rooms", "Business", "Industrial"],
+    "section": 3
+  },
+  {
+    "catalogid": 112,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Rooms", "Public", "Buildings", "Gathering", "Places"],
+    "section": 3
+  },
+  {
+    "catalogid": 113,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Stage", "Sets", "Backdrops"],
+    "section": 3
+  },
+  {
+    "catalogid": 114,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Architectural", "Details", "Paneling"],
+    "section": 3
+  },
+  {
+    "catalogid": 115,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Railway", "Car", "Interiors"],
+    "section": 3
+  },
+  {
+    "catalogid": 116,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Wall", "Treatments", "Decorated", "Painted", "Stenciled"],
+    "section": 3
+  },
+  {
+    "catalogid": 117,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Wall", "Treatments", "Wallpaper", "Bandboxes"],
+    "section": 3
+  },
+  {
+    "catalogid": 118,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Interiors"],
+    "type": ["Floor", "Treatments"],
+    "section": 3
+  },
+  {
+    "catalogid": 119,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Exteriors"],
+    "type": ["Architectural", "Details", "Ornament"],
+    "section": 3
+  },
+  {
+    "catalogid": 120,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Exteriors"],
+    "type": ["Firemarks"],
+    "section": 3
+  },
+  {
+    "catalogid": 121,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Exteriors"],
+    "type": ["Hitching", "Posts"],
+    "section": 3
+  },
+  {
+    "catalogid": 122,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Gardens"],
+    "type": ["Gardens"],
+    "section": 3
+  },
+  {
+    "catalogid": 123,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Gardens"],
+    "type": ["Garden", "Ornaments", "Metal", "Sculpture"],
+    "section": 3
+  },
+  {
+    "catalogid": 124,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Gardens"],
+    "type": ["Cemetery", "Art"],
+    "section": 3
+  },
+  {
+    "catalogid": 125,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Waterworks"],
+    "type": [],
+    "section": 3
+  },
+  {
+    "catalogid": 126,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Architecture"],
+    "subcategory": ["Ornamental", "Iron"],
+    "type": [],
+    "section": 3
+  },
+  {
+    "catalogid": 127,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Naive", "Art"],
+    "subcategory": ["Paintings", "Documents", "Prints"],
+    "type": [],
+    "section": 3
+  },
+  {
+    "catalogid": 128,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": ["Naive", "Art"],
+    "subcategory": ["Valentines", "Paper", "Cuttings"],
+    "type": [],
+    "section": 3
+  },
+  {
+    "catalogid": 129,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 3
+  },
+  {
+    "catalogid": 130,
+    "theme": ["Architecture", "Naive", "Art"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 3
+  },
+  {
+    "catalogid": 131,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Adzes", "Axes", "Hatchets"],
+    "section": 4
+  },
+  {
+    "catalogid": 132,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Augers"],
+    "section": 4
+  },
+  {
+    "catalogid": 133,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Bark", "Peelers"],
+    "section": 4
+  },
+  {
+    "catalogid": 134,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Beehives"],
+    "section": 4
+  },
+  {
+    "catalogid": 135,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Blacksmith", "Tools"],
+    "section": 4
+  },
+  {
+    "catalogid": 136,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Braces", "Bits", "Drills"],
+    "section": 4
+  },
+  {
+    "catalogid": 137,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Branding", "Irons", "Markers"],
+    "section": 4
+  },
+  {
+    "catalogid": 138,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Bristle", "Removers"],
+    "section": 4
+  },
+  {
+    "catalogid": 139,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Brushes", "Brush", "Cutters"],
+    "section": 4
+  },
+  {
+    "catalogid": 140,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Carpet", "Stretchers"],
+    "section": 4
+  },
+  {
+    "catalogid": 141,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Chisels"],
+    "section": 4
+  },
+  {
+    "catalogid": 142,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Clam", "Rakes"],
+    "section": 4
+  },
+  {
+    "catalogid": 143,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Clamps"],
+    "section": 4
+  },
+  {
+    "catalogid": 144,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Combs"],
+    "section": 4
+  },
+  {
+    "catalogid": 145,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Corn", "Planters"],
+    "section": 4
+  },
+  {
+    "catalogid": 146,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Cranberry", "Pickers"],
+    "section": 4
+  },
+  {
+    "catalogid": 147,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Drawknives", "Knives"],
+    "section": 4
+  },
+  {
+    "catalogid": 148,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Firefighting", "Equipment"],
+    "section": 4
+  },
+  {
+    "catalogid": 149,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Fish", "Spears"],
+    "section": 4
+  },
+  {
+    "catalogid": 150,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Flails"],
+    "section": 4
+  },
+  {
+    "catalogid": 151,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Frows", "Frow", "Clubs"],
+    "section": 4
+  },
+  {
+    "catalogid": 152,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Gauges"],
+    "section": 4
+  },
+  {
+    "catalogid": 153,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Grain", "Cradles"],
+    "section": 4
+  },
+  {
+    "catalogid": 154,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Hammers", "Mallets", "Gavels"],
+    "section": 4
+  },
+  {
+    "catalogid": 155,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Hay", "Forks"],
+    "section": 4
+  },
+  {
+    "catalogid": 156,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Hide", "Stretchers"],
+    "section": 4
+  },
+  {
+    "catalogid": 157,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Hoes", "Picks"],
+    "section": 4
+  },
+  {
+    "catalogid": 158,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Hooks"],
+    "section": 4
+  },
+  {
+    "catalogid": 159,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Jacks"],
+    "section": 4
+  },
+  {
+    "catalogid": 160,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Millstones"],
+    "section": 4
+  },
+  {
+    "catalogid": 161,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Pinkers"],
+    "section": 4
+  },
+  {
+    "catalogid": 162,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Planes"],
+    "section": 4
+  },
+  {
+    "catalogid": 163,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Plows"],
+    "section": 4
+  },
+  {
+    "catalogid": 164,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Potato", "Planters"],
+    "section": 4
+  },
+  {
+    "catalogid": 165,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Printing", "Equipment", "Stamps"],
+    "section": 4
+  },
+  {
+    "catalogid": 166,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Reamers"],
+    "section": 4
+  },
+  {
+    "catalogid": 167,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Saws"],
+    "section": 4
+  },
+  {
+    "catalogid": 168,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Scrapers"],
+    "section": 4
+  },
+  {
+    "catalogid": 169,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Screens"],
+    "section": 4
+  },
+  {
+    "catalogid": 170,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Shaving", "Horses"],
+    "section": 4
+  },
+  {
+    "catalogid": 171,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Shears"],
+    "section": 4
+  },
+  {
+    "catalogid": 172,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Shoemakers", "Leather", "Working", "Tools"],
+    "section": 4
+  },
+  {
+    "catalogid": 173,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Shovels", "Scoops"],
+    "section": 4
+  },
+  {
+    "catalogid": 174,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Sickels"],
+    "section": 4
+  },
+  {
+    "catalogid": 175,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Snow", "Guards"],
+    "section": 4
+  },
+  {
+    "catalogid": 176,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Splints"],
+    "section": 4
+  },
+  {
+    "catalogid": 177,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Spoke", "Cutters"],
+    "section": 4
+  },
+  {
+    "catalogid": 178,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Spreader", "Rigging"],
+    "section": 4
+  },
+  {
+    "catalogid": 179,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Sugar", "Industry", "Tools"],
+    "section": 4
+  },
+  {
+    "catalogid": 180,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Turpentine", "Industry", "Tools"],
+    "section": 4
+  },
+  {
+    "catalogid": 181,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Well", "Beam"],
+    "section": 4
+  },
+  {
+    "catalogid": 182,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Wiremaking", "Machine"],
+    "section": 4
+  },
+  {
+    "catalogid": 183,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Wrenches"],
+    "section": 4
+  },
+  {
+    "catalogid": 184,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Tools", "Equipment"],
+    "subcategory": [],
+    "type": ["Yokes"],
+    "section": 4
+  },
+  {
+    "catalogid": 185,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Nails", "Pins"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 186,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Bolts", "Locks", "Latches"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 187,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Drawer", "Pulls"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 188,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Hinges"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 189,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Door", "Knockers"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 190,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Tiebacks"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 191,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Hardware"],
+    "subcategory": ["Marine", "Hardware"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 192,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Firearms"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 193,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Powder", "Horns", "Flasks"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 194,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Ammunition", "Containers", "Bullet", "Molds"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 195,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Cross", "Bows"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 196,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Swords", "Sabers", "Daggers"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 197,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Armaments", "Military", "Supplies"],
+    "subcategory": ["Knapsacks", "Canteens"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 198,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Harness", "Saddlery"],
+    "subcategory": ["Collars", "Hobbles"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 199,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Harness", "Saddlery"],
+    "subcategory": ["Saddles", "Bridles", "Stirrups"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 200,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Harness", "Saddlery"],
+    "subcategory": ["Horse", "Shoes"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 201,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Harness", "Saddlery"],
+    "subcategory": ["Whips", "Whip", "Sockets"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 202,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Vehicles"],
+    "subcategory": ["Bicycles"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 203,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Vehicles"],
+    "subcategory": ["Baby", "Carriages"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 204,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Vehicles"],
+    "subcategory": ["Coaches", "Wagons"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 205,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Vehicles"],
+    "subcategory": ["Sleighs", "Sleds"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 206,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Vehicles"],
+    "subcategory": ["Carts", "Wheelbarrows"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 207,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Calibrated", "Instruments"],
+    "subcategory": ["Barometers", "Thermometers", "Compasses"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 208,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Calibrated", "Instruments"],
+    "subcategory": ["Octants"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 209,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Calibrated", "Instruments"],
+    "subcategory": ["Plumblines", "Levels"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 210,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Calibrated", "Instruments"],
+    "subcategory": ["Scales"],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 211,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": ["Machines"],
+    "subcategory": [],
+    "type": [],
+    "section": 4
+  },
+  {
+    "catalogid": 212,
+    "theme": ["Tools", "Hardware", "Firearms", "Vehicles"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 4
+  },
+  {
+    "catalogid": 213,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Fireplace", "Tools"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 214,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Andirons"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 215,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Firebacks"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 216,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Gridirons", "Waffle", "Irons", "Toasters"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 217,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Trivets", "Flatiron", "Holders"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 218,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Ovens", "Broilers"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 219,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Warmers"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 220,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Stoves", "Stove", "Equipment"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 221,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Fireplace", "Equipment", "Stoves"],
+    "subcategory": ["Match", "Boxes"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 222,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Lighting", "Devices"],
+    "subcategory": ["Candlesticks", "Holders"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 223,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Lighting", "Devices"],
+    "subcategory": ["Chandeliers", "Sconces"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 224,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Lighting", "Devices"],
+    "subcategory": ["Lamps"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 225,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Lighting", "Devices"],
+    "subcategory": ["Lanterns", "Torches"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 226,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Lighting", "Devices"],
+    "subcategory": ["Lighting", "Accessories"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 227,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Textile", "Implements"],
+    "subcategory": ["Spinning", "Weaving", "Implements"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 228,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Textile", "Implements"],
+    "subcategory": ["Sewing", "Tools"],
+    "type": [],
+    "section": 5
+  },
+  {
+    "catalogid": 229,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Apple", "Peelers"],
+    "section": 5
+  },
+  {
+    "catalogid": 230,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Asparagus", "Buncher"],
+    "section": 5
+  },
+  {
+    "catalogid": 231,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Barrels", "Buckets", "Kegs", "Tubs", "Piggins"],
+    "section": 5
+  },
+  {
+    "catalogid": 232,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Baskets"],
+    "section": 5
+  },
+  {
+    "catalogid": 233,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Bottles"],
+    "section": 5
+  },
+  {
+    "catalogid": 234,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Bowls"],
+    "section": 5
+  },
+  {
+    "catalogid": 235,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Boxes"],
+    "section": 5
+  },
+  {
+    "catalogid": 236,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Broom"],
+    "section": 5
+  },
+  {
+    "catalogid": 237,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Buttermolds", "Tubs"],
+    "section": 5
+  },
+  {
+    "catalogid": 238,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cans", "lars"],
+    "section": 5
+  },
+  {
+    "catalogid": 239,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Candlemolds"],
+    "section": 5
+  },
+  {
+    "catalogid": 240,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cherry", "Pitters"],
+    "section": 5
+  },
+  {
+    "catalogid": 241,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Churns"],
+    "section": 5
+  },
+  {
+    "catalogid": 242,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Clothes", "Pins"],
+    "section": 5
+  },
+  {
+    "catalogid": 243,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Clothes", "Washers"],
+    "section": 5
+  },
+  {
+    "catalogid": 244,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Coffee", "Teapots"],
+    "section": 5
+  },
+  {
+    "catalogid": 245,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Coffee", "Grinders", "Mills"],
+    "section": 5
+  },
+  {
+    "catalogid": 246,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Coffee", "Roasters"],
+    "section": 5
+  },
+  {
+    "catalogid": 247,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Compotes"],
+    "section": 5
+  },
+  {
+    "catalogid": 248,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cookie", "Cutters"],
+    "section": 5
+  },
+  {
+    "catalogid": 249,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cork", "Compressors"],
+    "section": 5
+  },
+  {
+    "catalogid": 250,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Crimpers"],
+    "section": 5
+  },
+  {
+    "catalogid": 251,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cruets"],
+    "section": 5
+  },
+  {
+    "catalogid": 252,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Cups", "Goblets", "Mugs", "Tankards"],
+    "section": 5
+  },
+  {
+    "catalogid": 253,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Dippers", "Ladles"],
+    "section": 5
+  },
+  {
+    "catalogid": 254,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Dough", "Bins", "Mixers"],
+    "section": 5
+  },
+  {
+    "catalogid": 255,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Draining", "Boards"],
+    "section": 5
+  },
+  {
+    "catalogid": 256,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Egg", "Beaters", "Cookers"],
+    "section": 5
+  },
+  {
+    "catalogid": 257,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Flour", "Bins", "Sifters"],
+    "section": 5
+  },
+  {
+    "catalogid": 258,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Fruit", "Slicer"],
+    "section": 5
+  },
+  {
+    "catalogid": 259,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Funnels"],
+    "section": 5
+  },
+  {
+    "catalogid": 260,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Gourds"],
+    "section": 5
+  },
+  {
+    "catalogid": 261,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Graters"],
+    "section": 5
+  },
+  {
+    "catalogid": 262,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Grinders"],
+    "section": 5
+  },
+  {
+    "catalogid": 263,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Ice", "Cream", "Freezer"],
+    "section": 5
+  },
+  {
+    "catalogid": 264,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Irons"],
+    "section": 5
+  },
+  {
+    "catalogid": 265,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Kettles"],
+    "section": 5
+  },
+  {
+    "catalogid": 266,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Knives", "Forks", "Knife", "Sharpeners", "Holders"],
+    "section": 5
+  },
+  {
+    "catalogid": 267,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Mashers"],
+    "section": 5
+  },
+  {
+    "catalogid": 268,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Measuring", "Cups"],
+    "section": 5
+  },
+  {
+    "catalogid": 269,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Molds"],
+    "section": 5
+  },
+  {
+    "catalogid": 270,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Mortars", "Pestles"],
+    "section": 5
+  },
+  {
+    "catalogid": 271,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Muffin", "Pans"],
+    "section": 5
+  },
+  {
+    "catalogid": 272,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Nut", "Crackers"],
+    "section": 5
+  },
+  {
+    "catalogid": 273,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pail"],
+    "section": 5
+  },
+  {
+    "catalogid": 274,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pan", "Slider"],
+    "section": 5
+  },
+  {
+    "catalogid": 275,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pastry", "Squeezer"],
+    "section": 5
+  },
+  {
+    "catalogid": 276,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pill", "Coater"],
+    "section": 5
+  },
+  {
+    "catalogid": 277,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pitcher"],
+    "section": 5
+  },
+  {
+    "catalogid": 278,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Porringers"],
+    "section": 5
+  },
+  {
+    "catalogid": 279,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Pots", "Pans"],
+    "section": 5
+  },
+  {
+    "catalogid": 280,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Rolling", "Pins"],
+    "section": 5
+  },
+  {
+    "catalogid": 281,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Salt", "Shakers"],
+    "section": 5
+  },
+  {
+    "catalogid": 282,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Sauerkraut", "Stomper"],
+    "section": 5
+  },
+  {
+    "catalogid": 283,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Sausage", "Stuffers"],
+    "section": 5
+  },
+  {
+    "catalogid": 284,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Scoops"],
+    "section": 5
+  },
+  {
+    "catalogid": 285,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Skewers", "Holders"],
+    "section": 5
+  },
+  {
+    "catalogid": 286,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Skimmers", "Sieves"],
+    "section": 5
+  },
+  {
+    "catalogid": 287,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Spatula"],
+    "section": 5
+  },
+  {
+    "catalogid": 288,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Spoons"],
+    "section": 5
+  },
+  {
+    "catalogid": 289,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Sugar", "Cutters"],
+    "section": 5
+  },
+  {
+    "catalogid": 290,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Tongs"],
+    "section": 5
+  },
+  {
+    "catalogid": 291,
+    "theme": ["Domestic", "Utensils"],
+    "category": ["Domestic", "Utensils"],
+    "subcategory": [],
+    "type": ["Traps"],
+    "section": 5
+  },
+  {
+    "catalogid": 292,
+    "theme": ["Domestic", "Utensils"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 5
+  },
+  {
+    "catalogid": 293,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Chairs", "Tables"],
+    "type": ["Chairs"],
+    "section": 6
+  },
+  {
+    "catalogid": 294,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Chairs", "Tables"],
+    "type": ["Settles", "Settees", "Sofas", "Daybeds"],
+    "section": 6
+  },
+  {
+    "catalogid": 295,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Chairs", "Tables"],
+    "type": ["Benches", "Stools"],
+    "section": 6
+  },
+  {
+    "catalogid": 296,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Chairs", "Tables"],
+    "type": ["Tables"],
+    "section": 6
+  },
+  {
+    "catalogid": 297,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Case", "Furniture"],
+    "type": ["Chests", "Boxes"],
+    "section": 6
+  },
+  {
+    "catalogid": 298,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Case", "Furniture"],
+    "type": ["Cupboards", "Cabinets", "Shelves"],
+    "section": 6
+  },
+  {
+    "catalogid": 299,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Case", "Furniture"],
+    "type": ["Highboys"],
+    "section": 6
+  },
+  {
+    "catalogid": 300,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Case", "Furniture"],
+    "type": ["Lowboys", "Sideboards"],
+    "section": 6
+  },
+  {
+    "catalogid": 301,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Case", "Furniture"],
+    "type": ["Desks", "Secretaries"],
+    "section": 6
+  },
+  {
+    "catalogid": 302,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Beds", "Cradles"],
+    "type": ["Beds"],
+    "section": 6
+  },
+  {
+    "catalogid": 303,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furniture"],
+    "subcategory": ["Beds", "Cradles"],
+    "type": ["Cradles"],
+    "section": 6
+  },
+  {
+    "catalogid": 304,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Bathtubs"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 305,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Books", "Albums"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 306,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Boxes", "Cases"],
+    "type": ["Knife", "Boxes"],
+    "section": 6
+  },
+  {
+    "catalogid": 307,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Boxes", "Cases"],
+    "type": ["Boxes", "Cases"],
+    "section": 6
+  },
+  {
+    "catalogid": 308,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Cellarets", "Wine", "Coolers"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 309,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Clocks"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 310,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Decorations"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 311,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Desk", "Accessories"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 312,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Door", "Stops"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 313,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Fire", "Screens"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 314,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Globes"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 315,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Mirrors", "Frames"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 316,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Racks", "Stands"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 317,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Safes", "Mail", "Boxes"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 318,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Tobacco", "Accessories"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 319,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Trays"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 320,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Trunks", "Hat", "Boxes"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 321,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Vases"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 322,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": ["Furnishing", "Accessories"],
+    "subcategory": ["Wall", "Pockets"],
+    "type": [],
+    "section": 6
+  },
+  {
+    "catalogid": 323,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 6
+  },
+  {
+    "catalogid": 324,
+    "theme": ["Furniture", "Decorative", "Accessories"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 6
+  },
+  {
+    "catalogid": 325,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Marine", "Carvings"],
+    "type": ["Figureheads", "Bowsprits"],
+    "section": 7
+  },
+  {
+    "catalogid": 326,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Marine", "Carvings"],
+    "type": ["Billets", "Mast", "Sheathes"],
+    "section": 7
+  },
+  {
+    "catalogid": 327,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Marine", "Carvings"],
+    "type": ["Stern", "Pieces", "Trailboards"],
+    "section": 7
+  },
+  {
+    "catalogid": 328,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Marine", "Carvings"],
+    "type": ["Ship", "Carvings"],
+    "section": 7
+  },
+  {
+    "catalogid": 329,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Circus", "Carvings"],
+    "type": [],
+    "section": 7
+  },
+  {
+    "catalogid": 330,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Carousel", "Carvings"],
+    "type": [],
+    "section": 7
+  },
+  {
+    "catalogid": 331,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Advertising", "Figures", "Signs"],
+    "type": ["Figures", "Cigar", "Store", "Indians"],
+    "section": 7
+  },
+  {
+    "catalogid": 332,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Advertising", "Figures", "Signs"],
+    "type": ["Figures", "Shop", "Figures", "Cigar", "Store", "Figures"],
+    "section": 7
+  },
+  {
+    "catalogid": 333,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Advertising", "Figures", "Signs"],
+    "type": ["Signs"],
+    "section": 7
+  },
+  {
+    "catalogid": 334,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Wooden", "Sculpture"],
+    "type": ["Human", "Religious", "Figures"],
+    "section": 7
+  },
+  {
+    "catalogid": 335,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Wooden", "Sculpture"],
+    "type": ["Animals", "Birds", "except", "Eagles"],
+    "section": 7
+  },
+  {
+    "catalogid": 336,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Wooden", "Sculpture"],
+    "type": ["Eagles"],
+    "section": 7
+  },
+  {
+    "catalogid": 337,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Wood", "Carvings"],
+    "subcategory": ["Wooden", "Sculpture"],
+    "type": ["Decoys"],
+    "section": 7
+  },
+  {
+    "catalogid": 338,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Scrimshaw"],
+    "subcategory": [],
+    "type": [],
+    "section": 7
+  },
+  {
+    "catalogid": 339,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Weathervanes", "Whirligigs"],
+    "subcategory": ["Weathervanes"],
+    "type": ["Wood"],
+    "section": 7
+  },
+  {
+    "catalogid": 340,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Weathervanes", "Whirligigs"],
+    "subcategory": ["Weathervanes"],
+    "type": ["Metal"],
+    "section": 7
+  },
+  {
+    "catalogid": 341,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": ["Weathervanes", "Whirligigs"],
+    "subcategory": ["Whirligigs"],
+    "type": [],
+    "section": 7
+  },
+  {
+    "catalogid": 342,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 7
+  },
+  {
+    "catalogid": 343,
+    "theme": ["Wood", "Carvings", "Weathervanes"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 7
+  },
+  {
+    "catalogid": 344,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Earthenware"],
+    "type": ["Earthenware"],
+    "section": 8
+  },
+  {
+    "catalogid": 345,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Earthenware"],
+    "type": ["Majolica"],
+    "section": 8
+  },
+  {
+    "catalogid": 346,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Earthenware"],
+    "type": ["Lusterware"],
+    "section": 8
+  },
+  {
+    "catalogid": 347,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Stoneware"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 348,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Ironstone"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 349,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Porcelain"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 350,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Tiles", "Plaques"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 351,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Ceramics"],
+    "subcategory": ["Ceramic", "Figures"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 352,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Chalkware"],
+    "subcategory": [],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 353,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Glass"],
+    "subcategory": ["Free", "Blown"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 354,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Glass"],
+    "subcategory": ["Mold", "Blown"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 355,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Glass"],
+    "subcategory": ["Pressed", "Glass"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 356,
+    "theme": ["Ceramics", "Glass"],
+    "category": ["Glass"],
+    "subcategory": ["Painted", "Glass", "Decorated", "Glass"],
+    "type": [],
+    "section": 8
+  },
+  {
+    "catalogid": 357,
+    "theme": ["Ceramics", "Glass"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 8
+  },
+  {
+    "catalogid": 358,
+    "theme": ["Ceramics", "Glass"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 8
+  },
+  {
+    "catalogid": 359,
+    "theme": ["Silver", "Copper", "Pewter", "Toleware"],
+    "category": ["Silver"],
+    "subcategory": [],
+    "type": [],
+    "section": 9
+  },
+  {
+    "catalogid": 360,
+    "theme": ["Silver", "Copper", "Pewter", "Toleware"],
+    "category": ["Pewter"],
+    "subcategory": [],
+    "type": [],
+    "section": 9
+  },
+  {
+    "catalogid": 361,
+    "theme": ["Silver", "Copper", "Pewter", "Toleware"],
+    "category": ["Toleware"],
+    "subcategory": [],
+    "type": [],
+    "section": 9
+  },
+  {
+    "catalogid": 362,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Dolls"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 363,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Dolls", "Accessories"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 364,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Marionettes", "Puppets"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 365,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Animals"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 366,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Vehicles"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 367,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Banks", "Mechanical", "Toys"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 368,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Toys"],
+    "subcategory": ["Toys"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 369,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Games"],
+    "subcategory": [],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 370,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["Percussion", "Instruments"],
+    "type": ["Bells"],
+    "section": 10
+  },
+  {
+    "catalogid": 371,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["Percussion", "Instruments"],
+    "type": ["Drums"],
+    "section": 10
+  },
+  {
+    "catalogid": 372,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["Percussion", "Instruments"],
+    "type": ["Piano"],
+    "section": 10
+  },
+  {
+    "catalogid": 373,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["Percussion", "Instruments"],
+    "type": ["Rattles", "Alarms"],
+    "section": 10
+  },
+  {
+    "catalogid": 374,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["String", "Instruments"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 375,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": [
+      "Wind",
+      "Instruments",
+      "including",
+      "Fifes",
+      "Trumpets",
+      "Organs"
+    ],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 376,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": ["Musical", "Instruments"],
+    "subcategory": ["Firemen", "Speaking", "Trumpets"],
+    "type": [],
+    "section": 10
+  },
+  {
+    "catalogid": 377,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Oversize", "Renderings"],
+    "section": 10
+  },
+  {
+    "catalogid": 378,
+    "theme": ["Toys", "Musical", "Instruments"],
+    "category": [],
+    "subcategory": [],
+    "type": ["Giant", "Renderings"],
+    "section": 10
+  }
+]

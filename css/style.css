@@ -1,0 +1,18 @@
+.svg {
+  background-color: white;
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+}
+#catalog-svg {
+  background-color: yellow;
+}
+#treemap-svg {
+  background-color: green;
+}
+#statemap-svg {
+  background-color: red;
+}
+#objects-svg {
+  background-color: blue;
+}

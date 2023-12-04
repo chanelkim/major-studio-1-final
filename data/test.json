@@ -1,0 +1,26 @@
+[
+  {
+    "catalogid": 1,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Samplers"],
+    "section": 1
+  },
+  {
+    "catalogid": 2,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Embroidered", "Pictures"],
+    "section": 1
+  },
+  {
+    "catalogid": 3,
+    "theme": ["Textiles", "Costume", "Jewelry"],
+    "category": ["Textiles"],
+    "subcategory": ["Embroidery", "Needlework"],
+    "type": ["Needlework", "Crewel", "Embroidery"],
+    "section": 1
+  }
+]

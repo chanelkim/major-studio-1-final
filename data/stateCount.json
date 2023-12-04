@@ -1,0 +1,252 @@
+[
+ {
+   "contrcount": 1,
+   "geostate": "Alabama",
+   "geostateabbr": "AL"
+ },
+ {
+   "contrcount": 6,
+   "geostate": "Alaska",
+   "geostateabbr": "AK"
+ },
+ {
+   "contrcount": 82,
+   "geostate": "Arizona",
+   "geostateabbr": "AZ"
+ },
+ {
+   "contrcount": 8,
+   "geostate": "Arkansas",
+   "geostateabbr": "AR"
+ },
+ {
+   "contrcount": 32,
+   "geostate": "California",
+   "geostateabbr": "CA"
+ },
+ {
+   "contrcount": 45,
+   "geostate": "Colorado",
+   "geostateabbr": "CO"
+ },
+ {
+   "contrcount": 6,
+   "geostate": "Connecticut",
+   "geostateabbr": "CT"
+ },
+ {
+   "contrcount": 18,
+   "geostate": "Delaware",
+   "geostateabbr": "DE"
+ },
+ {
+   "contrcount": 1,
+   "geostate": "Florida",
+   "geostateabbr": "FL"
+ },
+ {
+   "contrcount": 50,
+   "geostate": "Georgia",
+   "geostateabbr": "GA"
+ },
+ {
+   "contrcount": 41,
+   "geostate": "Hawaii",
+   "geostateabbr": "HI"
+ },
+ {
+   "contrcount": 10,
+   "geostate": "Idaho",
+   "geostateabbr": "ID"
+ },
+ {
+   "contrcount": 21,
+   "geostate": "Illinois",
+   "geostateabbr": "IL"
+ },
+ {
+   "contrcount": 13,
+   "geostate": "Indiana",
+   "geostateabbr": "IN"
+ },
+ {
+   "contrcount": 12,
+   "geostate": "Iowa",
+   "geostateabbr": "IA"
+ },
+ {
+   "contrcount": 15,
+   "geostate": "Kansas",
+   "geostateabbr": "KS"
+ },
+ {
+   "contrcount": 48,
+   "geostate": "Kentucky",
+   "geostateabbr": "KY"
+ },
+ {
+   "contrcount": 25,
+   "geostate": "Louisiana",
+   "geostateabbr": "LA"
+ },
+ {
+   "contrcount": 12,
+   "geostate": "Maine",
+   "geostateabbr": "ME"
+ },
+ {
+   "contrcount": 30,
+   "geostate": "Maryland",
+   "geostateabbr": "MD"
+ },
+ {
+   "contrcount": 8,
+   "geostate": "Massachusetts",
+   "geostateabbr": "MA"
+ },
+ {
+   "contrcount": 61,
+   "geostate": "Michigan",
+   "geostateabbr": "MI"
+ },
+ {
+   "contrcount": 15,
+   "geostate": "Minnesota",
+   "geostateabbr": "MN"
+ },
+ {
+   "contrcount": 38,
+   "geostate": "Mississippi",
+   "geostateabbr": "MS"
+ },
+ {
+   "contrcount": 246,
+   "geostate": "Missouri",
+   "geostateabbr": "MO"
+ },
+ {
+   "contrcount": 18,
+   "geostate": "Montana",
+   "geostateabbr": "MT"
+ },
+ {
+   "contrcount": 65,
+   "geostate": "Nebraska",
+   "geostateabbr": "NE"
+ },
+ {
+   "contrcount": 17,
+   "geostate": "Nevada",
+   "geostateabbr": "NV"
+ },
+ {
+   "contrcount": 1,
+   "geostate": "New Hampshire",
+   "geostateabbr": "NH"
+ },
+ {
+   "contrcount": 2,
+   "geostate": "New Jersey",
+   "geostateabbr": "NJ"
+ },
+ {
+   "contrcount": 22,
+   "geostate": "New Mexico",
+   "geostateabbr": "NM"
+ },
+ {
+   "contrcount": 15,
+   "geostate": "New York",
+   "geostateabbr": "NY"
+ },
+ {
+   "contrcount": 2,
+   "geostate": "North Carolina",
+   "geostateabbr": "NC"
+ },
+ {
+   "contrcount": 24,
+   "geostate": "North Dakota",
+   "geostateabbr": "ND"
+ },
+ {
+   "contrcount": 5,
+   "geostate": "Ohio",
+   "geostateabbr": "OH"
+ },
+ {
+   "contrcount": 34,
+   "geostate": "Oklahoma",
+   "geostateabbr": "OK"
+ },
+ {
+   "contrcount": 5,
+   "geostate": "Oregon",
+   "geostateabbr": "OR"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Pennsylvania",
+   "geostateabbr": "PA"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Rhode Island",
+   "geostateabbr": "RI"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "South Carolina",
+   "geostateabbr": "SC"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "South Dakota",
+   "geostateabbr": "SD"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Tennessee",
+   "geostateabbr": "TN"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Texas",
+   "geostateabbr": "TX"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Utah",
+   "geostateabbr": "UT"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Vermont",
+   "geostateabbr": "VT"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Virginia",
+   "geostateabbr": "VA"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Washington",
+   "geostateabbr": "WA"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "West Virginia",
+   "geostateabbr": "WV"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Wisconsin",
+   "geostateabbr": "WI"
+ },
+ {
+   "contrcount": 0,
+   "geostate": "Wyoming",
+   "geostateabbr": "WY"
+ }
+]
