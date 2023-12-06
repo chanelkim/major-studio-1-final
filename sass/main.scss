@@ -3,48 +3,48 @@
 // Load custom font
 @font-face {
   font-family: "Formula Condensed";
-  src: url("/fonts/FormulaCondensed/FormulaCondensed-Black.otf")
+  src: url("fonts/FormulaCondensed/FormulaCondensed-Black.otf")
       format("opentype"),
-    url("/fonts/FormulaCondensed/FormulaCondensed-Bold.otf") format("opentype"),
-    url("/fonts/FormulaCondensed/FormulaCondensed-light.otf") format("opentype"),
-    url("/fonts/FormulaCondensed/FormulaCondensed-Regular.otf")
+    url("fonts/FormulaCondensed/FormulaCondensed-Bold.otf") format("opentype"),
+    url("fonts/FormulaCondensed/FormulaCondensed-light.otf") format("opentype"),
+    url("fonts/FormulaCondensed/FormulaCondensed-Regular.otf")
       format("opentype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal/NeueMontreal-Bold.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Bold.ttf") format("truetype"),
-    url("/fonts/NeueMontreal/NeueMontreal-BoldItalic.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-BoldItalic.ttf") format("truetype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Italic.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Italic.ttf") format("truetype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Light.ttf") format("truetype"),
-    url("/fonts/NeueMontreal/NeueMontreal-LightItalic.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-LightItalic.ttf") format("truetype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype"),
-    url("/fonts/NeueMontreal/NeueMontreal-Regular.ttf") format("truetype");
+  src: url("fonts/NeueMontreal/NeueMontreal-Bold.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-Bold.ttf") format("truetype"),
+    url("fonts/NeueMontreal/NeueMontreal-BoldItalic.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-BoldItalic.ttf") format("truetype"),
+    url("fonts/NeueMontreal/NeueMontreal-Italic.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-Italic.ttf") format("truetype"),
+    url("fonts/NeueMontreal/NeueMontreal-Light.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-Light.ttf") format("truetype"),
+    url("fonts/NeueMontreal/NeueMontreal-LightItalic.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-LightItalic.ttf") format("truetype"),
+    url("fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype"),
+    url("fonts/NeueMontreal/NeueMontreal-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Neue World";
-  src: url("/fonts/NeueWorld/NeueWorld-Regular.ttf") format("truetype"),
-    url("/fonts/NeueWorld/NeueWorld-SemiExtendedUltralight.ttf")
+  src: url("fonts/NeueWorld/NeueWorld-Regular.ttf") format("truetype"),
+    url("fonts/NeueWorld/NeueWorld-SemiExtendedUltralight.ttf")
       format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Agrandir Variable";
-  src: url("/fonts/AgrandirVariable/Agrandir Variable.ttf") format("truetype");
+  src: url("fonts/AgrandirVariable/Agrandir Variable.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
   font-family: "Agrandir";
-  src: url("/fonts/Agrandir/Agrandir-Regular.otf") format("opentype"),
-    url("/fonts/Agrandir/Agrandir-Narrow.otf") format("opentype"),
-    url("/fonts/Agrandir/Agrandir-WideLight.ttf") format("truetype"),
-    url("/fonts/Agrandir/Agrandir-Grand.ttf") format("truetype");
+  src: url("fonts/Agrandir/Agrandir-Regular.otf") format("opentype"),
+    url("fonts/Agrandir/Agrandir-Narrow.otf") format("opentype"),
+    url("fonts/Agrandir/Agrandir-WideLight.ttf") format("truetype"),
+    url("fonts/Agrandir/Agrandir-Grand.ttf") format("truetype");
   font-weight: normal;
 }
 
