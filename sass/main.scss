@@ -64,7 +64,7 @@ body {
 
 // FONT FAMILY - FONT SIZES - HEADINGS
 body {
-  padding-top: 6rem;
+  padding-top: 60px;
   font-family: "NeueMontreal-Regular", sans-serif;
 }
 h1 {
@@ -78,22 +78,20 @@ p {
 }
 
 // Navbar
-.navbar-nav .nav-link {
-  font-family: "NeueMontreal-Regular", sans-serif;
-  letter-spacing: 0.02rem;
-  color: black;
-}
-#navbar-brand {
+// .navbar-nav .nav-link {
+//   font-family: "NeueMontreal-Regular", sans-serif;
+//   letter-spacing: 0.02rem;
+//   color: black;
+// }
+.navbar-brand {
   font-family: "FormulaCondensed-Regular", sans-serif;
-  font-size: 2rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-#navbarNav-link {
+.nav-link {
   font-family: "NeueMontreal-Light", sans-serif;
-}
-#navbarNav-link:active {
-  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 4rem;
+  // letter-spacing: 0.02rem;
 }
 
 // Main
@@ -173,6 +171,24 @@ $link-hover-decoration: underline;
 $btn-border-radius: 0rem;
 $btn-border-radius-lg: 0rem;
 $btn-border-radius-sm: 0rem;
+$btn-border-width: 1px;
+$btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), 0.2);
+
+// NAV BAR
+// Nav toggler
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.75rem;
+$navbar-toggler-font-size: $font-size-lg;
+$navbar-toggler-border-radius: 1px;
+$navbar-toggler-focus-width: 1px;
+
+// Nav bar light
+$navbar-light-color: rgba($black, 0.9);
+$navbar-light-hover-color: rgba($black, 0.7);
+$navbar-light-active-color: rgba($black, 0.9);
+$navbar-light-disabled-color: rgba($black, 0.3);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($black, 0.5);
 
 // MIXIN TEXT-TRUNCATE
 

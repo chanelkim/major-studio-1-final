@@ -1,11 +1,11 @@
 @media (max-width: 767.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 6rem; /* Height of navbar */
+    top: 60px; /* Height of navbar */
     bottom: 0;
     width: 100%;
     padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     overflow-y: auto;
     background-color: var(--gray-dark);
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -13,16 +13,11 @@
     transform: translateX(100%);
   }
   .offcanvas-collapse.open {
-    top: 6rem;
-    -webkit-transform: translateX(66%);
-    transform: translateX(66%); /* Account for horizontal padding on navbar */
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-2rem); /* Account for horizontal padding on navbar */
   }
 }
 
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
-
-// .box-shadow {
-//   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-// }
