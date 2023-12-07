@@ -1,23 +1,30 @@
 @media (max-width: 767.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 60px; /* Height of navbar */
+    height: 33%;
+    top: relative; /* Height of navbar */
+    right: 0;
+    left: 0;
     bottom: 0;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 3rem;
+    padding-top: 0.5rem;
+    // padding-right: 1rem;
+    padding-left: 1rem;
     overflow-y: auto;
     background-color: var(--gray-dark);
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    border-top: 1px solid black;
+    visibility: visible;
   }
   .offcanvas-collapse.open {
-    -webkit-transform: translateX(-1rem);
-    transform: translateX(-2rem); /* Account for horizontal padding on navbar */
+    -webkit-transform: translateX(0rem);
+    transform: translateX(0rem);
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+    /* Account for horizontal padding on navbar */
   }
-}
-
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
 }

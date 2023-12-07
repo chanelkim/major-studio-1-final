@@ -61,6 +61,9 @@ body {
   padding: 0;
   margin: 0;
 }
+// .navbar-collapse {
+//   position: absolute;
+// }
 
 // FONT FAMILY - FONT SIZES - HEADINGS
 body {
@@ -71,28 +74,25 @@ h1 {
   font-family: "NeueMontreal-Light", sans-serif;
   font-size: 3rem;
 }
-
 p {
   font-size: 1rem;
   letter-spacing: -0.05rem;
 }
 
 // Navbar
-// .navbar-nav .nav-link {
-//   font-family: "NeueMontreal-Regular", sans-serif;
-//   letter-spacing: 0.02rem;
-//   color: black;
-// }
 .navbar-brand {
   font-family: "FormulaCondensed-Regular", sans-serif;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
 .nav-link {
-  font-family: "NeueMontreal-Light", sans-serif;
-  font-size: 4rem;
-  // letter-spacing: 0.02rem;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  letter-spacing: -0.03rem;
 }
+// .nav-link:hover {
+//   font-family: "NeueMontreal-Light", sans-serif;
+//   letter-spacing: 0.02rem;
+// }
 
 // Main
 #main {
@@ -109,6 +109,21 @@ section {
   padding-top: 4rem;
 }
 
+// Offcanvas
+$offcanvas-vertical-height: 50vh;
+.offcanvas-body {
+  font-family: "NeueMontreal-Regular", sans-serif;
+}
+.offcanvas-body h3 {
+  letter-spacing: -0.04rem;
+}
+.offcanvas-body div {
+  padding-bottom: 2rem;
+}
+.offcanvas-body p {
+  letter-spacing: -0.01rem;
+}
+
 // Footer
 #footer {
   font-family: "NeueMontreal-Regular", sans-serif;
@@ -121,20 +136,8 @@ section {
 }
 #footer-x {
   font-family: "NeueMontreal-Light", sans-serif;
-}
-
-// Offcanvas
-.offcanvas-body {
-  font-family: "NeueMontreal-Regular", sans-serif;
-}
-.offcanvas-body h3 {
-  letter-spacing: -0.04rem;
-}
-.offcanvas-body div {
-  padding-bottom: 2rem;
-}
-.offcanvas-body p {
-  letter-spacing: -0.01rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 // Sidebar
@@ -155,9 +158,9 @@ $link-hover-decoration: underline;
 // BREAKPOINTS
 
 // SPACING
+// $navbar-nav-link-padding-x: 0rem;
 
 // BORDERS
-
 // -----
 // 2. Import Variables and Mixins Files
 // any redefined vars above will be incorporated into the files (e.g. in maps)
@@ -175,6 +178,11 @@ $btn-border-width: 1px;
 $btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), 0.2);
 
 // NAV BAR
+$navbar-padding-y: $spacer * 0.5;
+$navbar-padding-x: $spacer;
+
+$navbar-nav-link-padding-x: 0.5rem;
+
 // Nav toggler
 $navbar-toggler-padding-y: 0.25rem;
 $navbar-toggler-padding-x: 0.75rem;
@@ -184,8 +192,8 @@ $navbar-toggler-focus-width: 1px;
 
 // Nav bar light
 $navbar-light-color: rgba($black, 0.9);
-$navbar-light-hover-color: rgba($black, 0.7);
-$navbar-light-active-color: rgba($black, 0.9);
+$navbar-light-hover-color: rgba($black, 0.4);
+$navbar-light-active-color: rgba($black, 1);
 $navbar-light-disabled-color: rgba($black, 0.3);
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 $navbar-light-toggler-border-color: rgba($black, 0.5);

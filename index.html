@@ -15,11 +15,9 @@
 
   <body class="bg-primary-bg">
     <!-- nav -->
-    <nav
-      class="navbar navbar-expand-md fixed-top navbar-light bg-light p-4 align-self-center"
-    >
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
       <a
-        class="navbar-brand align-middle"
+        class="navbar-brand"
         id="navbar-brand"
         href="#footer-sidebar"
         data-bs-toggle="offcanvas"
@@ -36,7 +34,7 @@
         of American Design
       </a>
       <button
-        class="navbar-toggler p-0 border-0"
+        class="navbar-toggler p-0 border-0 d-md-none"
         type="button"
         data-toggle="offcanvas"
       >
@@ -45,10 +43,9 @@
       <!-- sidebar links -->
       <div
         class="navbar-collapse offcanvas-collapse bg-light justify-content-end"
-        id="navbarNav"
       >
         <ul class="navbar-nav">
-          <li class="nav-item pe-2">
+          <li class="nav-item">
             <a
               class="nav-link"
               :active
@@ -75,7 +72,7 @@
     <main role="main" class="bg-primary-bg" id="main">
       <!-- catalog test -->
       <section
-        class="container-fluid"
+        class="container-fluid p-0"
         id="catalog-section"
         title="catalog-section"
       >
@@ -204,11 +201,25 @@
 
     <!-- footer -->
     <footer class="d-flex bg-light text-black" id="footer">
-      <div class="container-fluid d-flex m-0 align-items-center">
+      <div class="container-fluid d-flex ps-4 align-items-center">
         <!-- open sidebar / offcanvas -->
-        <div class="d-flex ms-3 p-0 align-items-center">
+        <div class="d-flex p-0 align-items-center">
           <a
             href="https://www.nga.gov/"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="svgs/nga.svg"
+              alt="National Gallery of Art logo"
+              width="60"
+              height="44"
+              class="align-self-center"
+          /></a>
+          <p class="align-center mb-0 ps-2 pe-2" height="44" id="footer-x">X</p>
+          <a
+            href="https://www.newschool.edu/parsons/ms-data-visualization/"
             class="external"
             target="_blank"
             rel="noopener noreferrer"
