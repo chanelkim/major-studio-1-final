@@ -40,12 +40,17 @@ body {
   transform: rotate(-90deg);
   transform-origin: 0 0;
 }
+#arrow-default-svg {
+  background-color: none;
+  /* height: 28px; */
+  /* width: 28px; */
+  /* vertical-align: middle; */
+}
 #category {
-  position: relative;
+  /* position: relative; */
   letter-spacing: 0.08em;
-  line-height: 34px;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 2rem;
   font-family: "FormulaCondensed-Bold";
 }
 #subcategory {
@@ -58,6 +63,7 @@ body {
   font-size: 14px;
   font-family: "NeueMontreal-Regular";
 }
+/*
 #cat-token,
 #subcat-token,
 #type-token {
@@ -65,11 +71,13 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  text-align: center;
   justify-content: flex-start;
   padding: var(--padding-3xs);
+  padding-top: 0.5em;
   margin-left: -1px;
 }
+*/
 #cat {
   flex-direction: column;
 }
