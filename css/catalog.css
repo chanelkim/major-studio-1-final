@@ -1,32 +1,4 @@
 /* STYLE FOR CATALOG */
-body {
-  margin: 0;
-  line-height: normal;
-}
-
-:root {
-  /* fonts */
-  --body-2: "Neue Montreal";
-  --label-2: "Formula Condensed";
-
-  /* font sizes */
-  --body-2-size: 14px;
-  --body-1-size: 20px;
-  --label-2-size: 30px;
-
-  /* Colors */
-  --white: #fff;
-  --black: #000;
-
-  /* Paddings */
-  --padding-3xs: 10px;
-  --padding-11xs: 2px;
-}
-.vector-icon {
-  position: relative;
-  width: 41px;
-  height: 40px;
-}
 .arrow {
   background-color: white;
   border: 1px solid black;
@@ -52,9 +24,6 @@ body {
   font-family: "FormulaCondensed-Bold";
   margin: auto;
 }
-/* #cat-token {
-  padding: var(--padding-3xs);
-} */
 #subcategory {
   position: relative;
   font-size: 20px;
@@ -65,73 +34,3 @@ body {
   font-size: 14px;
   font-family: "NeueMontreal-Regular";
 }
-/*
-#cat-token,
-#subcat-token,
-#type-token {
-  align-self: stretch;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: flex-start;
-  padding: var(--padding-3xs);
-  padding-top: 0.5em;
-  margin-left: -1px;
-}
-#cat {
-  flex-direction: column;
-}
-#subcat {
-  background-color: #f0d23c;
-  flex-direction: column;
-}
-#cats,
-#subcats,
-#types {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-#cats {
-  background-color: #e63c28;
-  flex-direction: row;
-  margin-left: -1px;
-}
-#subcats {
-  flex-direction: row;
-  margin-top: -1px;
-  text-align: center;
-  font-size: var(--body-1-size);
-  font-family: var(--body-2);
-}
-#types {
-  background-color: #64281e;
-  align-items: flex-start;
-  margin-top: -1px;
-  font-size: var(--body-2-size);
-}
-#cats,
-#part,
-#theme {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-#theme {
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  overflow: hidden;
-  flex-direction: row;
-}
-#part {
-  position: relative;
-  width: 100%;
-  flex-direction: column;
-  text-align: left;
-  font-size: var(--label-2-size);
-  color: var(--black);
-  font-family: var(--label-2);
-}
-*/
