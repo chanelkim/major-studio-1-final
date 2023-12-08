@@ -40,6 +40,10 @@ body {
   transform: rotate(-90deg);
   transform-origin: 0 0;
 }
+#responsive-arrow {
+  max-width: 100%;
+  height: auto;
+}
 #category {
   /* position: relative; */
   letter-spacing: 0.08em;
