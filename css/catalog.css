@@ -40,26 +40,24 @@ body {
   transform: rotate(-90deg);
   transform-origin: 0 0;
 }
-#arrow-default-svg {
-  background-color: none;
-  /* height: 28px; */
-  /* width: 28px; */
-  /* vertical-align: middle; */
-}
 #category {
   /* position: relative; */
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 2rem;
   font-family: "FormulaCondensed-Bold";
+  margin: auto;
 }
+/* #cat-token {
+  padding: var(--padding-3xs);
+} */
 #subcategory {
   position: relative;
   font-size: 20px;
   font-family: "NeueMontreal-Regular";
 }
 #type {
-  position: relative;
+  /* position: relative; */
   font-size: 14px;
   font-family: "NeueMontreal-Regular";
 }
@@ -77,12 +75,11 @@ body {
   padding-top: 0.5em;
   margin-left: -1px;
 }
-*/
 #cat {
   flex-direction: column;
 }
 #subcat {
-  /* background-color: #f0d23c; */
+  background-color: #f0d23c;
   flex-direction: column;
 }
 #cats,
@@ -94,19 +91,19 @@ body {
   justify-content: flex-start;
 }
 #cats {
-  /* background-color: #e63c28; */
+  background-color: #e63c28;
   flex-direction: row;
   margin-left: -1px;
 }
 #subcats {
   flex-direction: row;
   margin-top: -1px;
-  /* text-align: center; */
+  text-align: center;
   font-size: var(--body-1-size);
   font-family: var(--body-2);
 }
 #types {
-  /* background-color: #64281e; */
+  background-color: #64281e;
   align-items: flex-start;
   margin-top: -1px;
   font-size: var(--body-2-size);
@@ -133,3 +130,4 @@ body {
   color: var(--black);
   font-family: var(--label-2);
 }
+*/
