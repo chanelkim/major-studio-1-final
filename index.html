@@ -1023,17 +1023,17 @@
 
       <!-- cat bootstrap test 3 -->
       <div class="container-fluid" id="component">
-        <div class="row">
-          <div class="d-flex flex-row p-0" id="cats">
+        <div class="row" role="group">
+          <div class="d-flex flex-row p-0" role="group" id="cats">
             <div class="col border border-1 border-black" id="cat-1">
               <!-- need to convert cat to html buttons, not divs -->
-              <div class="d-flex flex-column">
+              <div class="d-flex flex-column btn-group btn-warning">
                 <!-- cat -->
                 <button
                   class="btn col border border-1 border-black d-flex p-0 align-items-stretch"
-                  type="button"
+                  type="radio"
                   data-bs-toggle="collapse"
-                  data-bs-target="#subcats"
+                  data-bs-target="#subcats-test-1"
                   aria-expanded="false"
                   aria-controls="collapseExample"
                 >
@@ -1050,77 +1050,69 @@
                   </div>
                 </button>
                 <!-- subcats -->
-                <div class="col-lg-12 p-0" id="subcats-1">
+                <div class="col-lg-12 p-0 collapse" id="subcats-test-1">
                   <div
-                    class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
+                    class="d-flex flex-row btn-group align-content-stretch flex-wrap"
+                    role="group"
                   >
                     <!-- need to convert subcat and types to input radios -->
+
                     <input
                       type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
                       name="btnradio"
                       autocomplete="off"
-                      id="subcat-token-1"
+                      id="subcat-token-2"
                     />
                     <label
                       class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
+                      for="subcat-token-2"
                       id="subcategory"
-                      >Test</label
+                      >Subcat 2</label
+                    >
+                    <input
+                      type="radio"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
+                      name="btnradio"
+                      autocomplete="off"
+                      id="subcat-token-3"
+                    />
+                    <label
+                      class="btn col border border-2 border-black d-flex p-2 align-middle"
+                      for="subcat-token-3"
+                      id="subcategory"
+                      >Subcat 3</label
+                    >
+                    <input
+                      type="radio"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
+                      name="btnradio"
+                      autocomplete="off"
+                      id="subcat-token-4"
+                    />
+                    <label
+                      class="btn col border border-2 border-black d-flex p-2 align-middle"
+                      for="subcat-token-4"
+                      id="subcategory"
+                      >Subcat 4</label
                     >
                   </div>
                   <!-- types -->
-                  <div id="types-1">
+                  <div class="collapse" id="types-test-1">
                     <div
-                      class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
+                      class="d-flex flex-row btn-group align-content-stretch flex-wrap"
                     >
                       <button
                         class="btn col border border-2 border-black d-flex p-1 align-middle"
@@ -1163,15 +1155,15 @@
                 </div>
               </div>
             </div>
-            <div class="col border border-1 border-black" id="cat-1">
+            <div class="col border border-1 border-black" id="cat-2">
               <!-- need to convert cat to html buttons, not divs -->
-              <div class="d-flex flex-column">
+              <div class="d-flex flex-column btn-group btn-warning">
                 <!-- cat -->
                 <button
                   class="btn col border border-1 border-black d-flex p-0 align-items-stretch"
-                  type="button"
+                  type="radio"
                   data-bs-toggle="collapse"
-                  data-bs-target="#subcats"
+                  data-bs-target="#subcats-test-2"
                   aria-expanded="false"
                   aria-controls="collapseExample"
                 >
@@ -1184,219 +1176,73 @@
                     class="col-9 border border-1 border-black"
                     id="cat-token"
                   >
-                    <tspan id="category">category 1</tspan>
+                    <tspan id="category">category 2</tspan>
                   </div>
                 </button>
                 <!-- subcats -->
-                <div class="col-lg-12 p-0" id="subcats-1">
+                <div class="col-lg-12 p-0 collapse" id="subcats-test-2">
                   <div
-                    class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
+                    class="d-flex flex-row btn-group align-content-stretch flex-wrap"
+                    role="group"
                   >
                     <!-- need to convert subcat and types to input radios -->
+
                     <input
                       type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
                       name="btnradio"
                       autocomplete="off"
-                      id="subcat-token-1"
+                      id="subcat-token-2"
                     />
                     <label
                       class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
+                      for="subcat-token-2"
                       id="subcategory"
-                      >Test</label
+                      >Subcat 2</label
+                    >
+                    <input
+                      type="radio"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
+                      name="btnradio"
+                      autocomplete="off"
+                      id="subcat-token-3"
+                    />
+                    <label
+                      class="btn col border border-2 border-black d-flex p-2 align-middle"
+                      for="subcat-token-3"
+                      id="subcategory"
+                      >Subcat 3</label
+                    >
+                    <input
+                      type="radio"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#types-test-1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="btn-check"
+                      name="btnradio"
+                      autocomplete="off"
+                      id="subcat-token-4"
+                    />
+                    <label
+                      class="btn col border border-2 border-black d-flex p-2 align-middle"
+                      for="subcat-token-4"
+                      id="subcategory"
+                      >Subcat 4</label
                     >
                   </div>
                   <!-- types -->
-                  <div id="types-1">
+                  <div class="collapse" id="types-test-1">
                     <div
-                      class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
-                    >
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 1</tspan>
-                      </button>
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 2</tspan>
-                      </button>
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 3</tspan>
-                      </button>
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 4</tspan>
-                      </button>
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 1</tspan>
-                      </button>
-                      <button
-                        class="btn col border border-2 border-black d-flex p-1 align-middle"
-                        type="button"
-                      >
-                        <tspan id="type-token">type 2</tspan>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col border border-1 border-black" id="cat-1">
-              <!-- need to convert cat to html buttons, not divs -->
-              <div class="d-flex flex-column">
-                <!-- cat -->
-                <button
-                  class="btn col border border-1 border-black d-flex p-0 align-items-stretch"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#subcats"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  <div
-                    class="col-3 p-1 border border-1 border-black d-inline-flex"
-                  >
-                    <img src="svgs/arrow.svg" alt="arrow" />
-                  </div>
-                  <div
-                    class="col-9 border border-1 border-black"
-                    id="cat-token"
-                  >
-                    <tspan id="category">category 1</tspan>
-                  </div>
-                </button>
-                <!-- subcats -->
-                <div class="col-lg-12 p-0" id="subcats-1">
-                  <div
-                    class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
-                  >
-                    <!-- need to convert subcat and types to input radios -->
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                    <input
-                      type="radio"
-                      class="btn-check subcategory"
-                      name="btnradio"
-                      autocomplete="off"
-                      id="subcat-token-1"
-                    />
-                    <label
-                      class="btn col border border-2 border-black d-flex p-2 align-middle"
-                      for="subcat-token-1"
-                      id="subcategory"
-                      >Test</label
-                    >
-                  </div>
-                  <!-- types -->
-                  <div id="types-1">
-                    <div
-                      class="d-flex flex-row btn-group d-flex align-content-stretch flex-wrap"
+                      class="d-flex flex-row btn-group align-content-stretch flex-wrap"
                     >
                       <button
                         class="btn col border border-2 border-black d-flex p-1 align-middle"
