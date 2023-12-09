@@ -1,7 +1,8 @@
-// Use catalogData
-if (window.catalogData !== undefined) {
-  console.log("Using catalogData in otherScript");
-}
+// // Use catalogData
+// // if (window.catalogData !== undefined) {
+// //   console.log("catalogData is available");
+// // }
+// console.log("Using catalogData in otherScript:", window.catalogData);
 // --------------------------------------------------------
 // VARIABLES
 // --------------------------------------------------------
@@ -40,15 +41,17 @@ if (window.catalogData !== undefined) {
 // --------------------------------------------------------
 // Function to group data by section
 function groupDataBySection(data) {
-  //   console.log("Data in groupDataBySection:", data);
+  // console.log("Data in groupDataBySection:", data);
   return d3.group(data, (d) => d.section);
 }
+// groupDataBySection(window.catalogData);
 
 // Function to group data by category
 function groupDataByCategory(data) {
-  //   console.log("Data in groupDataByCategory:", data);
+  // console.log("Data in groupDataByCategory:", data);
   return d3.group(data, (d) => d.category);
 }
+// groupDataByCategory(window.catalogData);
 
 // Map theme relationships
 function relateThemes(data) {

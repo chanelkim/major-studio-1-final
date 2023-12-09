@@ -2,6 +2,14 @@
 // Lab 08: Interactivity
 // MANAGAING STATES WITH VANILLA JS; source: https://www.youtube.com/watch?v=2DV-bONIPqQ (July 6, 2021)
 
+// --------------------------------------------------------
+// GLOBAL VARIABLES
+// --------------------------------------------------------
+let CATALOG;
+let TREEMAP;
+let STATEMAP;
+let OBJECTS;
+
 // STATE SCHEMA
 let state = {
   data: null, // Placeholder for the loaded data
@@ -13,7 +21,7 @@ let state = {
   treemap: {
     // text: "Contributors",
     svg: "#treemap-svg",
-    dataUrl: "data/test.json",
+    dataUrl: "data/IoAD_artists_imgs.json",
   },
   statemap: {
     // text: "Map",
@@ -26,16 +34,6 @@ let state = {
     dataUrl: "data/test.json",
   },
 };
-
-// --------------------------------------------------------
-// EVENT LISTENERS
-// --------------------------------------------------------
-// EXAMPLE FOR TIMEOUT
-// setTimeout(() => {
-//   setState(() => {
-//     state.text = "Changed by setTimeout";
-//   });
-// }, 3000);
 
 // --------------------------------------------------------
 // LOAD DATA
@@ -102,13 +100,49 @@ function loadData(objectKey) {
 // Define an array of object keys to loop through
 const keysToLoad = Object.keys(state).filter((key) => key !== "data");
 
-Promise.all(keysToLoad.map(loadData))
-  .then((dataArray) => {
-    // dataArray contains the loaded data for each object in order
+// Promise.all(keysToLoad.map(loadData))
+//   .then((dataArray) => {
+//     // dataArray contains the loaded data for each object in order
+//     const allData = Object.assign({}, ...dataArray);
+//     console.log("All data globally:", allData);
+//     // Other actions with allData within this scope
+//   })
+//   .catch((error) => {
+//     console.error("Error loading data:", error.message);
+//   });
+
+async function loadDataAsync() {
+  try {
+    const dataArray = await Promise.all(keysToLoad.map(loadData));
     const allData = Object.assign({}, ...dataArray);
     console.log("All data globally:", allData);
-    // Other actions with allData within this scope
-  })
-  .catch((error) => {
+    CATALOG = allData.catalog;
+    TREEMAP = allData.treemap;
+    STATEMAP = allData.statemap;
+    OBJECTS = allData.objects;
+
+    // Call a function or callback here
+    handleGlobalData();
+  } catch (error) {
     console.error("Error loading data:", error.message);
-  });
+  }
+}
+
+// Call the async function
+loadDataAsync();
+
+// ...
+
+// Define your function to handle the global data
+function handleGlobalData() {
+  console.log("GLOBAL CATALOG:", CATALOG);
+  console.log("GLOBAL TREEMAP:", TREEMAP);
+  console.log("GLOBAL STATEMAP:", STATEMAP);
+  console.log("GLOBAL OBJECTS:", OBJECTS);
+}
+
+// ******************************************************
+// Treemap
+// REFERENCES
+// D3 Responsive Zoomable Treemap (D3 v4+) Aleksander Lenart; source: https://codepen.io/figle/pen/qapRZQ
+// ******************************************************
