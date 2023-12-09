@@ -5,53 +5,50 @@ if (window.catalogData !== undefined) {
 // --------------------------------------------------------
 // VARIABLES
 // --------------------------------------------------------
-// Group by section
-const groupedData = groupDataBySection(window.catalogData);
-// console.log("section 1:", groupedData.get(1));
+// // Group by section
+// const groupedData = groupDataBySection(window.catalogData);
+// console.log("groupedData:", groupedData);
+// // console.log("section 1:", groupedData.get(1));
 
-// Group by input theme
-groupDataByTheme(window.catalogData, "Textiles");
+// // Group by input theme
+// groupDataByTheme(window.catalogData, "Textiles");
 
-// Map themes to subsections
-const themeRelations = relateThemes(window.catalogData);
+// // Map themes to subsections
+// const themeRelations = relateThemes(window.catalogData);
 
-// --------------------------------------------------------
-// LAYOUT
-// --------------------------------------------------------
-// initializeLayout(groupedData, themeRelations);
-// function initializeLayout() {
-//   const svgWidth = dimensions[0];
-//   const svgHeight = 0.5 * dimensions[1];
+// // ----------------TEST------------------
+// const dataBySection = groupDataBySection(window.catalogData);
+// console.log("dataBySection:", dataBySection);
+// console.log("query particular section:", dataBySection.get(2));
 
-//   const parent = d3.select(".svg-container");
-//   const svg = parent
-//     .append("svg")
-//     .attr("width", svgWidth)
-//     .attr("height", svgHeight);
+// const dataBySectionTheme = d3.group(
+//   window.catalogData,
+//   (d) => d.section,
+//   (d) => d.theme
+// );
+// console.log("sectionTheme:", dataBySectionTheme);
 
-//   // svg.append("g");
-// }
-
-// function selectSVG(svgSelector) {
-//   // Select the SVG element based on the provided selector
-//   return d3.select(svgSelector);
-// }
-
-// // Example usage:
-// const statemap = selectSVG(state.statemap.svg);
+// const dataBySectioncategory = d3.index(
+//   window.catalogData,
+//   //   (v) => v.length,
+//   (d) => d.theme
+// );
+// console.log("sectioncategory:", dataBySectioncategory);
 
 // --------------------------------------------------------
 // 1. FUNCTIONS for organizing CATALOG DATA
 // --------------------------------------------------------
-// // Function to group data by section
-// function groupDataBySection(data) {
-//   return d3.group(data, (d) => d.section);
-// }
+// Function to group data by section
+function groupDataBySection(data) {
+  //   console.log("Data in groupDataBySection:", data);
+  return d3.group(data, (d) => d.section);
+}
 
-// // Function to group data by theme
-// function groupDataByTheme(data) {
-//   return d3.group(data, (d) => d.theme);
-// }
+// Function to group data by category
+function groupDataByCategory(data) {
+  //   console.log("Data in groupDataByCategory:", data);
+  return d3.group(data, (d) => d.category);
+}
 
 // Map theme relationships
 function relateThemes(data) {
@@ -119,53 +116,38 @@ function relateThemes(data) {
   return themeRelations;
 }
 
+// // Function to create theme relations
+// function createThemeRelations(data) {
+//     const themeRelations = new Map();
+
+//     data.forEach((item) => {
+//       item.theme.forEach((theme) => {
+//         if (!themeRelations.has(theme)) {
+//           themeRelations.set(theme, {
+//             category: new Set(),
+//             subcategory: new Set(),
+//             type: new Set(),
+//             catalogid: new Set(),
+//           });
+//         }
+
+//         const themeData = themeRelations.get(theme);
+
+//         item.category.forEach((category) => themeData.category.add(category));
+//         item.subcategory.forEach((subcategory) =>
+//           themeData.subcategory.add(subcategory)
+//         );
+//         item.type.forEach((type) => themeData.type.add(type));
+//         themeData.catalogid.add(item.catalogid);
+//       });
+//     });
+
+//     return themeRelations;
+//   }
+
 //--------------------------------------------------------
 // 2. FUNCTIONS for drawing html buttons
 // --------------------------------------------------------
-// Function to group data by section
-function groupDataBySection(data) {
-  console.log("Data in groupDataBySection:", data); // Log the data
-  return d3.group(data, (d) => d.section);
-}
-
-// Function to group data by category
-function groupDataByCategory(data) {
-  return d3.group(data, (d) => d.category);
-}
-
-// Function to group data by theme
-function groupDataByTheme(data) {
-  return d3.group(data, (d) => d.theme);
-}
-
-// Function to create theme relations
-function createThemeRelations(data) {
-  const themeRelations = new Map();
-
-  data.forEach((item) => {
-    item.theme.forEach((theme) => {
-      if (!themeRelations.has(theme)) {
-        themeRelations.set(theme, {
-          category: new Set(),
-          subcategory: new Set(),
-          type: new Set(),
-          catalogid: new Set(),
-        });
-      }
-
-      const themeData = themeRelations.get(theme);
-
-      item.category.forEach((category) => themeData.category.add(category));
-      item.subcategory.forEach((subcategory) =>
-        themeData.subcategory.add(subcategory)
-      );
-      item.type.forEach((type) => themeData.type.add(type));
-      themeData.catalogid.add(item.catalogid);
-    });
-  });
-
-  return themeRelations;
-}
 
 // Function to dynamically generate buttons based on the data
 function generateButtons(data) {
@@ -174,101 +156,115 @@ function generateButtons(data) {
 
   const groupedDataBySection = groupDataBySection(data);
 
-  groupedDataBySection.forEach((sectionData, sectionIndex) => {
-    const rowDiv = componentContainer.append("div").classed("row", true);
+  groupedDataBySection.forEach((item, index) => {
+    const rowDiv = componentContainer
+      .append("div")
+      .classed("row", true)
+      .attr("role", "group");
 
     const catsContainer = rowDiv
       .append("div")
       .classed("d-flex flex-row p-0", true)
       .attr("role", "group");
 
-    const groupedDataByCategory = groupDataByCategory(sectionData);
+    const addedThemes = new Set(); // Keep track of added themes
+    const groupedDataByCategory = groupDataByCategory(item);
 
     groupedDataByCategory.forEach((categoryData, categoryIndex) => {
-      const catId = `cat-${sectionIndex + 1}-${categoryIndex + 1}`;
-      const subcatId = `subcats-test-${sectionIndex + 1}-${categoryIndex + 1}`;
-      const typesId = `types-test-${sectionIndex + 1}-${categoryIndex + 1}`;
+      // Convert the theme array to a string for duplicate checking
+      const themeString = JSON.stringify(categoryData[0].theme);
 
-      const categoryButton = catsContainer
-        .append("button")
-        .classed("btn", true)
-        .classed("col-12", true) // Span the entire row
-        .classed("col-md-6", true) // Set maximum width for larger screens
-        .classed("col-lg-4", true) // Set maximum width for larger screens
-        .classed("border", true)
-        .classed("border-2", true)
-        .classed("border-black", true)
-        .classed("d-flex", true)
-        .classed("p-2", true)
-        .classed("align-middle", true)
-        .attr("type", "button")
-        .attr("id", catId)
-        .attr("data-bs-toggle", "collapse") // Add collapse toggle
-        .attr("data-bs-target", `#${subcatId}`)
-        .html(`<tspan id="category">${categoryData[0].category}</tspan>`);
+      // Check if the theme has been added before creating buttons
+      if (!addedThemes.has(themeString)) {
+        addedThemes.add(themeString); // Add the theme to the set
 
-      const subcatDiv = catsContainer
-        .append("div")
-        .classed("col-lg-12", true)
-        .classed("p-0", true)
-        .classed("collapse", true)
-        .attr("id", subcatId);
+        const catId = `cat-${index + 1}-${categoryIndex + 1}`;
+        const subcatId = `subcats-test-${index + 1}-${categoryIndex + 1}`;
+        const typesId = `types-test-${index + 1}-${categoryIndex + 1}`;
 
-      categoryData.forEach((item, rowIndex) => {
-        item.subcategory.forEach((subcat, subcatIndex) => {
-          const subcatButton = subcatDiv
-            .append("button")
-            .classed("btn", true)
-            .classed("col", true)
-            .classed("border", true)
-            .classed("border-2", true)
-            .classed("border-black", true)
-            .classed("d-flex", true)
-            .classed("p-2", true)
-            .classed("align-middle", true)
-            .classed("align-items-stretch", true) // Add align-items-stretch class
-            .classed("flex-wrap", true) // Add flex-wrap class
-            .attr("type", "button")
-            .attr(
-              "id",
-              `${catId}-subcategory-${rowIndex + 1}-${subcatIndex + 1}`
-            )
-            .html(`<tspan id="subcategory">${subcat}</tspan>`);
+        const categoryButton = catsContainer
+          .append("button")
+          .classed("btn", true)
+          .classed("col-12", true) // Span the entire row
+          .classed("col-md-6", true) // Set maximum width for larger screens
+          .classed("col-lg-4", true) // Set maximum width for larger screens
+          .classed("border", true)
+          .classed("border-2", true)
+          .classed("border-black", true)
+          .classed("d-flex", true)
+          .classed("p-2", true)
+          .classed("align-middle", true)
+          .attr("type", "button")
+          .attr("id", catId)
+          .attr("data-bs-toggle", "collapse") // Add collapse toggle
+          .attr("data-bs-target", `#${subcatId}`)
+          .html(`<tspan id="category">${categoryData[0].category}</tspan>`);
+
+        const subcatDiv = catsContainer
+          .append("div")
+          .classed("col-lg-12", true)
+          .classed("p-0", true)
+          .classed("collapse", true)
+          .attr("id", subcatId);
+
+        categoryData.forEach((item, rowIndex) => {
+          item.subcategory.forEach((subcat, subcatIndex) => {
+            const subcatButton = subcatDiv
+              .append("button")
+              .classed("btn", true)
+              .classed("col", true)
+              .classed("border", true)
+              .classed("border-2", true)
+              .classed("border-black", true)
+              .classed("d-flex", true)
+              .classed("p-2", true)
+              .classed("align-middle", true)
+              .classed("align-items-stretch", true) // Add align-items-stretch class
+              .classed("flex-wrap", true) // Add flex-wrap class
+              .attr("type", "button")
+              .attr(
+                "id",
+                `${catId}-subcategory-${rowIndex + 1}-${subcatIndex + 1}`
+              )
+              .html(`<tspan id="subcategory">${subcat}</tspan>`);
+          });
         });
-      });
 
-      const typesDiv = catsContainer
-        .append("div")
-        .classed("collapse", true)
-        .attr("id", typesId);
+        const typesDiv = catsContainer
+          .append("div")
+          .classed("collapse", true)
+          .attr("id", typesId);
 
-      categoryData.forEach((item, rowIndex) => {
-        const rowIndexTypesId = `${typesId}-${rowIndex + 1}`;
+        categoryData.forEach((item, rowIndex) => {
+          const rowIndexTypesId = `${typesId}-${rowIndex + 1}`;
 
-        item.type.forEach((type, typeIndex) => {
-          const typeButton = typesDiv
-            .append("button")
-            .classed("btn", true)
-            .classed("col", true)
-            .classed("border", true)
-            .classed("border-2", true)
-            .classed("border-black", true)
-            .classed("d-flex", true)
-            .classed("p-1", true)
-            .classed("align-middle", true)
-            .classed("align-items-stretch", true) // Add align-items-stretch class
-            .classed("flex-wrap", true) // Add flex-wrap class
-            .attr("type", "button")
-            .attr("id", `${catId}-type-${rowIndex + 1}-${typeIndex + 1}`)
-            .html(`<tspan id="type-token">${type}</tspan>`);
+          item.type.forEach((type, typeIndex) => {
+            const typeButton = typesDiv
+              .append("button")
+              .classed("btn", true)
+              .classed("col", true)
+              .classed("border", true)
+              .classed("border-2", true)
+              .classed("border-black", true)
+              .classed("d-flex", true)
+              .classed("p-1", true)
+              .classed("align-middle", true)
+              .classed("align-items-stretch", true) // Add align-items-stretch class
+              .classed("flex-wrap", true) // Add flex-wrap class
+              .attr("type", "button")
+              .attr("id", `${catId}-type-${rowIndex + 1}-${typeIndex + 1}`)
+              .html(`<tspan id="type-token">${type}</tspan>`);
+          });
         });
-      });
+      }
     });
   });
 }
 
 // Call the function to generate buttons based on data
 generateButtons(window.catalogData);
+
+// Generate buttons v2
 
 /* ARCHIVE ------------------*/
 // // Group data by section
@@ -278,18 +274,6 @@ generateButtons(window.catalogData);
 //     return groupedData;
 //   }
 
-//   // Group data by imput theme
-//   function groupDataByTheme(data, desiredTheme) {
-//     const groupedData = d3.group(data, (d) =>
-//       d.theme.includes(desiredTheme) ? desiredTheme : "Other"
-//     );
-//     // Filter out the 'Other' key
-//     const filteredGroups = new Map(
-//       [...groupedData].filter(([key, value]) => key !== "Other")
-//     );
-//     console.log(`Data grouped by ${desiredTheme}:`, filteredGroups);
-//     return filteredGroups;
-//   }
 // function relateThemes(data) {
 //   const themeRelations = d3.rollup(
 //     data,
