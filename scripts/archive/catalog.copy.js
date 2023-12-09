@@ -13,7 +13,8 @@ const groupedData = groupDataBySection(window.catalogData);
 groupDataByTheme(window.catalogData, "Textiles");
 
 // Map themes to subsections
-const themeRelations = relateThemes(window.catalogData);
+const themeRelations = createThemeRelations(window.catalogData);
+relateThemes(window.catalogData);
 
 // --------------------------------------------------------
 // LAYOUT
@@ -167,108 +168,75 @@ function createThemeRelations(data) {
   return themeRelations;
 }
 
-// Function to dynamically generate buttons based on the data
-function generateButtons(data) {
-  const componentContainer = d3.select("#component");
-  componentContainer.html(""); // Clear existing content
+// Finally, call the initializeLayout function
+initializeLayout(groupedData, themeRelations);
 
-  const groupedDataBySection = groupDataBySection(data);
+// LAYOUT
+function initializeLayout(groupedData, themeRelations) {
+  const radioGroupContainer = d3.select("#component");
 
-  groupedDataBySection.forEach((sectionData, sectionIndex) => {
-    const rowDiv = componentContainer.append("div").classed("row", true);
+  Object.keys(groupedData).forEach((section) => {
+    const colDiv = radioGroupContainer.append("div").classed("col-12", true);
 
-    const catsContainer = rowDiv
-      .append("div")
-      .classed("d-flex flex-row p-0", true)
-      .attr("role", "group");
+    const fieldset = colDiv.append("fieldset").classed("row", true);
 
-    const groupedDataByCategory = groupDataByCategory(sectionData);
+    const addedThemes = new Set();
 
-    groupedDataByCategory.forEach((categoryData, categoryIndex) => {
-      const catId = `cat-${sectionIndex + 1}-${categoryIndex + 1}`;
-      const subcatId = `subcats-test-${sectionIndex + 1}-${categoryIndex + 1}`;
-      const typesId = `types-test-${sectionIndex + 1}-${categoryIndex + 1}`;
+    groupedData[section].forEach((item, index) => {
+      item.theme.forEach((theme) => {
+        // Check if the theme has been added to the set
+        if (!addedThemes.has(theme)) {
+          const uniqueId = `option_${theme}_${index}`;
 
-      const categoryButton = catsContainer
-        .append("button")
-        .classed("btn", true)
-        .classed("col-12", true) // Span the entire row
-        .classed("col-md-6", true) // Set maximum width for larger screens
-        .classed("col-lg-4", true) // Set maximum width for larger screens
-        .classed("border", true)
-        .classed("border-2", true)
-        .classed("border-black", true)
-        .classed("d-flex", true)
-        .classed("p-2", true)
-        .classed("align-middle", true)
-        .attr("type", "button")
-        .attr("id", catId)
-        .attr("data-bs-toggle", "collapse") // Add collapse toggle
-        .attr("data-bs-target", `#${subcatId}`)
-        .html(`<tspan id="category">${categoryData[0].category}</tspan>`);
-
-      const subcatDiv = catsContainer
-        .append("div")
-        .classed("col-lg-12", true)
-        .classed("p-0", true)
-        .classed("collapse", true)
-        .attr("id", subcatId);
-
-      categoryData.forEach((item, rowIndex) => {
-        item.subcategory.forEach((subcat, subcatIndex) => {
-          const subcatButton = subcatDiv
-            .append("button")
-            .classed("btn", true)
+          const radioInput = fieldset
+            .append("input")
+            .attr("type", "radio")
+            .classed("btn-check", true)
             .classed("col", true)
-            .classed("border", true)
-            .classed("border-2", true)
-            .classed("border-black", true)
-            .classed("d-flex", true)
-            .classed("p-2", true)
-            .classed("align-middle", true)
-            .classed("align-items-stretch", true) // Add align-items-stretch class
-            .classed("flex-wrap", true) // Add flex-wrap class
-            .attr("type", "button")
-            .attr(
-              "id",
-              `${catId}-subcategory-${rowIndex + 1}-${subcatIndex + 1}`
-            )
-            .html(`<tspan id="subcategory">${subcat}</tspan>`);
-        });
-      });
+            .attr("name", "options")
+            .attr("id", uniqueId)
+            .attr("autocomplete", "off")
+            .attr("data-label", theme);
 
-      const typesDiv = catsContainer
-        .append("div")
-        .classed("collapse", true)
-        .attr("id", typesId);
-
-      categoryData.forEach((item, rowIndex) => {
-        const rowIndexTypesId = `${typesId}-${rowIndex + 1}`;
-
-        item.type.forEach((type, typeIndex) => {
-          const typeButton = typesDiv
-            .append("button")
+          const label = fieldset
+            .append("label")
             .classed("btn", true)
+            .classed("btn-outline-primary", true)
+            .classed("text-dark", true)
             .classed("col", true)
-            .classed("border", true)
-            .classed("border-2", true)
-            .classed("border-black", true)
-            .classed("d-flex", true)
-            .classed("p-1", true)
-            .classed("align-middle", true)
-            .classed("align-items-stretch", true) // Add align-items-stretch class
-            .classed("flex-wrap", true) // Add flex-wrap class
-            .attr("type", "button")
-            .attr("id", `${catId}-type-${rowIndex + 1}-${typeIndex + 1}`)
-            .html(`<tspan id="type-token">${type}</tspan>`);
-        });
+            .attr("for", uniqueId)
+            .text(theme);
+
+          // Add the theme to the set to avoid duplication
+          addedThemes.add(theme);
+
+          // Add a click event to toggle the active class and visibility of related arrays
+          radioInput.on("change", () => {
+            const selectedTheme = theme;
+            // Toggle the visibility of category, subcategory, and type based on the selected theme
+            toggleVisibility(selectedTheme, themeRelations);
+
+            // Toggle the "active" class for the clicked radio button
+            d3.selectAll('input[name="options"]').classed("active", false);
+            radioInput.classed("active", true);
+          });
+        }
       });
     });
   });
+
+  // Add a container for the related radios
+  const relatedRadiosContainer = radioGroupContainer
+    .append("div")
+    .attr("id", "relatedRadios")
+    .classed("col-12", true);
+
+  console.log("Initializing layout...");
 }
+// initializeLayout(groupedData, themeRelations);
 
 // Call the function to generate buttons based on data
-generateButtons(window.catalogData);
+// generateButtons(window.catalogData);
 
 /* ARCHIVE ------------------*/
 // // Group data by section

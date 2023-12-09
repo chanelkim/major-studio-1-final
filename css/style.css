@@ -67,3 +67,8 @@
   width: 50%;
   height: auto;
 }
+#landing-btn {
+  font-family: "FormulaCondensed-Regular", sans-serif;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}

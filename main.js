@@ -8,22 +8,22 @@ let state = {
   catalog: {
     // text: "Catalog",
     svg: "#catalog-svg",
-    dataUrl: "/data/catalog_cleaned.json",
+    dataUrl: "data/catalog_cleaned.json",
   },
   treemap: {
     // text: "Contributors",
     svg: "#treemap-svg",
-    dataUrl: "/data/test.json",
+    dataUrl: "data/test.json",
   },
   statemap: {
     // text: "Map",
     svg: "#statemap-svg",
-    dataUrl: ["/data/stateCount.json", "/data/us.json"], // array of data sources,
+    dataUrl: ["data/stateCount.json", "data/us.json"], // array of data sources,
   },
   objects: {
     // text: "Home",
     svg: "#objects-svg",
-    dataUrl: "/data/test.json",
+    dataUrl: "data/test.json",
   },
 };
 
