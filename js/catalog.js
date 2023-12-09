@@ -2,7 +2,7 @@
 // // if (window.catalogData !== undefined) {
 // //   console.log("catalogData is available");
 // // }
-// console.log("Using catalogData in otherScript:", window.catalogData);
+console.log("Using catalogData in otherScript:", window.catalogData);
 // --------------------------------------------------------
 // VARIABLES
 // --------------------------------------------------------
@@ -35,6 +35,13 @@
 //   (d) => d.theme
 // );
 // console.log("sectioncategory:", dataBySectioncategory);
+// --------------------------------------------------------
+// LOAD DATA + PERFORM FUNCTIONS
+// --------------------------------------------------------
+d3.json("/data/catalog_cleaned.json").then(function (data) {
+  groupDataBySection(data);
+  generateButtons(data);
+});
 
 // --------------------------------------------------------
 // 1. FUNCTIONS for organizing CATALOG DATA
@@ -269,7 +276,7 @@ function generateButtons(data) {
 }
 
 // Call the function to generate buttons based on data
-generateButtons(window.catalogData);
+// generateButtons(window.catalogData);
 
 // Generate buttons v2
 
