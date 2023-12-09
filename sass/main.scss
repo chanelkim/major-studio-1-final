@@ -64,12 +64,17 @@ body {
 
 // FONT FAMILY - FONT SIZES - HEADINGS
 body {
-  padding-top: 60px;
+  padding-top: 0.5rem;
   font-family: "NeueMontreal-Regular", sans-serif;
 }
 h1 {
   font-family: "NeueMontreal-Light", sans-serif;
   font-size: 3rem;
+}
+h2 {
+  font-family: "FormulaCondensed-Regular", sans-serif;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 p {
   font-size: 1rem;
