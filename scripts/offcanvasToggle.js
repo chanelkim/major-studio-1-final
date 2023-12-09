@@ -1,6 +1,15 @@
 // --------------------------------------------------------
-// BOOTSTRAP FUNCTIONS
+// OFFCANVAS MENU FUNCTION
+// source: https://getbootstrap.com/docs/5.3/examples/offcanvas-navbar/
 // --------------------------------------------------------
+// Convert to vanilla JS
+// $(function () {
+//   'use strict'
+
+//   $('[data-toggle="offcanvas"]').on('click', function () {
+//     $('.offcanvas-collapse').toggleClass('open')
+//   })
+// })
 
 // Offcanvas menu
 document.addEventListener("DOMContentLoaded", function () {

@@ -171,92 +171,96 @@ function generateButtons(data) {
     const groupedDataByCategory = groupDataByCategory(item);
 
     groupedDataByCategory.forEach((categoryData, categoryIndex) => {
-      // Convert the theme array to a string for duplicate checking
-      const themeString = JSON.stringify(categoryData[0].theme);
+      categoryData.forEach((dataItem) => {
+        // Convert the theme array to a string for duplicate checking
+        const themeString = JSON.stringify(dataItem.theme);
+        // Convert the theme array to a string for duplicate checking
+        //   const themeString = JSON.stringify(categoryData[0].theme);
 
-      // Check if the theme has been added before creating buttons
-      if (!addedThemes.has(themeString)) {
-        addedThemes.add(themeString); // Add the theme to the set
+        // Check if the theme has been added before creating buttons
+        if (!addedThemes.has(themeString)) {
+          addedThemes.add(themeString); // Add the theme to the set
 
-        const catId = `cat-${index + 1}-${categoryIndex + 1}`;
-        const subcatId = `subcats-test-${index + 1}-${categoryIndex + 1}`;
-        const typesId = `types-test-${index + 1}-${categoryIndex + 1}`;
+          const catId = `cat-${index + 1}-${categoryIndex + 1}`;
+          const subcatId = `subcats-test-${index + 1}-${categoryIndex + 1}`;
+          const typesId = `types-test-${index + 1}-${categoryIndex + 1}`;
 
-        const categoryButton = catsContainer
-          .append("button")
-          .classed("btn", true)
-          .classed("col-12", true) // Span the entire row
-          .classed("col-md-6", true) // Set maximum width for larger screens
-          .classed("col-lg-4", true) // Set maximum width for larger screens
-          .classed("border", true)
-          .classed("border-2", true)
-          .classed("border-black", true)
-          .classed("d-flex", true)
-          .classed("p-2", true)
-          .classed("align-middle", true)
-          .attr("type", "button")
-          .attr("id", catId)
-          .attr("data-bs-toggle", "collapse") // Add collapse toggle
-          .attr("data-bs-target", `#${subcatId}`)
-          .html(`<tspan id="category">${categoryData[0].category}</tspan>`);
+          const categoryButton = catsContainer
+            .append("button")
+            .classed("btn", true)
+            .classed("col-12", true) // Span the entire row
+            .classed("col-md-6", true) // Set maximum width for larger screens
+            .classed("col-lg-4", true) // Set maximum width for larger screens
+            .classed("border", true)
+            .classed("border-2", true)
+            .classed("border-black", true)
+            .classed("d-flex", true)
+            .classed("p-2", true)
+            .classed("align-middle", true)
+            .attr("type", "button")
+            .attr("id", catId)
+            .attr("data-bs-toggle", "collapse") // Add collapse toggle
+            .attr("data-bs-target", `#${subcatId}`)
+            .html(`<tspan id="category">${categoryData[0].category}</tspan>`);
 
-        const subcatDiv = catsContainer
-          .append("div")
-          .classed("col-lg-12", true)
-          .classed("p-0", true)
-          .classed("collapse", true)
-          .attr("id", subcatId);
+          const subcatDiv = catsContainer
+            .append("div")
+            .classed("col-lg-12", true)
+            .classed("p-0", true)
+            .classed("collapse", true)
+            .attr("id", subcatId);
 
-        categoryData.forEach((item, rowIndex) => {
-          item.subcategory.forEach((subcat, subcatIndex) => {
-            const subcatButton = subcatDiv
-              .append("button")
-              .classed("btn", true)
-              .classed("col", true)
-              .classed("border", true)
-              .classed("border-2", true)
-              .classed("border-black", true)
-              .classed("d-flex", true)
-              .classed("p-2", true)
-              .classed("align-middle", true)
-              .classed("align-items-stretch", true) // Add align-items-stretch class
-              .classed("flex-wrap", true) // Add flex-wrap class
-              .attr("type", "button")
-              .attr(
-                "id",
-                `${catId}-subcategory-${rowIndex + 1}-${subcatIndex + 1}`
-              )
-              .html(`<tspan id="subcategory">${subcat}</tspan>`);
+          categoryData.forEach((item, rowIndex) => {
+            item.subcategory.forEach((subcat, subcatIndex) => {
+              const subcatButton = subcatDiv
+                .append("button")
+                .classed("btn", true)
+                .classed("col", true)
+                .classed("border", true)
+                .classed("border-2", true)
+                .classed("border-black", true)
+                .classed("d-flex", true)
+                .classed("p-2", true)
+                .classed("align-middle", true)
+                .classed("align-items-stretch", true) // Add align-items-stretch class
+                .classed("flex-wrap", true) // Add flex-wrap class
+                .attr("type", "button")
+                .attr(
+                  "id",
+                  `${catId}-subcategory-${rowIndex + 1}-${subcatIndex + 1}`
+                )
+                .html(`<tspan id="subcategory">${subcat}</tspan>`);
+            });
           });
-        });
 
-        const typesDiv = catsContainer
-          .append("div")
-          .classed("collapse", true)
-          .attr("id", typesId);
+          const typesDiv = catsContainer
+            .append("div")
+            .classed("collapse", true)
+            .attr("id", typesId);
 
-        categoryData.forEach((item, rowIndex) => {
-          const rowIndexTypesId = `${typesId}-${rowIndex + 1}`;
+          categoryData.forEach((item, rowIndex) => {
+            const rowIndexTypesId = `${typesId}-${rowIndex + 1}`;
 
-          item.type.forEach((type, typeIndex) => {
-            const typeButton = typesDiv
-              .append("button")
-              .classed("btn", true)
-              .classed("col", true)
-              .classed("border", true)
-              .classed("border-2", true)
-              .classed("border-black", true)
-              .classed("d-flex", true)
-              .classed("p-1", true)
-              .classed("align-middle", true)
-              .classed("align-items-stretch", true) // Add align-items-stretch class
-              .classed("flex-wrap", true) // Add flex-wrap class
-              .attr("type", "button")
-              .attr("id", `${catId}-type-${rowIndex + 1}-${typeIndex + 1}`)
-              .html(`<tspan id="type-token">${type}</tspan>`);
+            item.type.forEach((type, typeIndex) => {
+              const typeButton = typesDiv
+                .append("button")
+                .classed("btn", true)
+                .classed("col", true)
+                .classed("border", true)
+                .classed("border-2", true)
+                .classed("border-black", true)
+                .classed("d-flex", true)
+                .classed("p-1", true)
+                .classed("align-middle", true)
+                .classed("align-items-stretch", true) // Add align-items-stretch class
+                .classed("flex-wrap", true) // Add flex-wrap class
+                .attr("type", "button")
+                .attr("id", `${catId}-type-${rowIndex + 1}-${typeIndex + 1}`)
+                .html(`<tspan id="type-token">${type}</tspan>`);
+            });
           });
-        });
-      }
+        }
+      });
     });
   });
 }
