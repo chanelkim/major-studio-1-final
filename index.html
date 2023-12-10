@@ -101,9 +101,9 @@
           <p>Grouping objects of the Index by theme</p>
         </div>
         <div class="" width="100%" height="100%">
-          <svg class="svg" id="catalog-svg">
+          <!-- <svg class="svg" id="catalog-svg">
             <rect x="0" y="0" fill="yellow"></rect>
-          </svg>
+          </svg> -->
         </div>
         <!-- catalog design -->
         <div class="container-fluid" id="component">
@@ -156,7 +156,7 @@
                       <label
                         class="btn col border border-2 border-black d-flex p-2 align-middle"
                         for="subcat-token-2"
-                        id="subcategory"
+                        id="subcategory-1"
                         >Subcat 2</label
                       >
                       <input
@@ -173,7 +173,7 @@
                       <label
                         class="btn col border border-2 border-black d-flex p-2 align-middle"
                         for="subcat-token-3"
-                        id="subcategory"
+                        id="subcategory-2"
                         >Subcat 3</label
                       >
                       <input
@@ -190,7 +190,7 @@
                       <label
                         class="btn col border border-2 border-black d-flex p-2 align-middle"
                         for="subcat-token-4"
-                        id="subcategory"
+                        id="subcategory-3"
                         >Subcat 4</label
                       >
                     </div>
@@ -203,37 +203,37 @@
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 1</tspan>
+                          <tspan id="type-token-1">type 1</tspan>
                         </button>
                         <button
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 2</tspan>
+                          <tspan id="type-token-2">type 2</tspan>
                         </button>
                         <button
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 3</tspan>
+                          <tspan id="type-token-3">type 3</tspan>
                         </button>
                         <button
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 4</tspan>
+                          <tspan id="type-token-4">type 4</tspan>
                         </button>
                         <button
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 1</tspan>
+                          <tspan id="type-token-5">type 1</tspan>
                         </button>
                         <button
                           class="btn col border border-2 border-black d-flex p-1 align-middle"
                           type="button"
                         >
-                          <tspan id="type-token">type 2</tspan>
+                          <tspan id="type-token-6">type 2</tspan>
                         </button>
                       </div>
                     </div>
@@ -258,14 +258,14 @@
                       <img
                         src="svgs/arrow.svg"
                         alt="arrow"
-                        id="responsive-arrow"
+                        class="responsive-arrow"
                       />
                     </div>
                     <div
                       class="col-11 border border-1 border-black"
-                      id="cat-token"
+                      id="cat-token-2"
                     >
-                      <tspan id="category">category 2</tspan>
+                      <tspan id="category-2">category 2</tspan>
                     </div>
                   </button>
                   <!-- subcats -->
@@ -393,11 +393,10 @@
           <p>Grouping objects of the Index by contributor or artist</p>
         </div>
         <div class="" width="100%" height="100%">
-          <svg class="svg" id="treemap-svg">
-            <rect x="0" y="0" fill="green"></rect>
-          </svg>
           <div class="treemap-container" id="chart">
-            <div class="up">&larr; UP</div>
+            <div id="treemap-nav">
+              <div class="up">&larr; UP</div>
+            </div>
           </div>
         </div>
       </section>

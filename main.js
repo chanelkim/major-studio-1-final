@@ -140,9 +140,3 @@ function handleGlobalData() {
   console.log("GLOBAL STATEMAP:", STATEMAP);
   console.log("GLOBAL OBJECTS:", OBJECTS);
 }
-
-// ******************************************************
-// Treemap
-// REFERENCES
-// D3 Responsive Zoomable Treemap (D3 v4+) Aleksander Lenart; source: https://codepen.io/figle/pen/qapRZQ
-// ******************************************************

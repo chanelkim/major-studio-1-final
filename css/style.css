@@ -72,3 +72,108 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+/* TREEMAP */
+/* .element {
+  margin: 0;
+} */
+#treemap-nav {
+  position: absolute;
+  /* position: relative; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  z-index: 1000;
+}
+#treemap-nav .up {
+  /* position: fixed; */
+  /* font: bold 14px/1 sans-serif; */
+  color: white;
+  width: 92px;
+  padding: 8px;
+  background-color: black;
+  opacity: 0.8;
+  float: left;
+  cursor: pointer;
+}
+#treemap-nav .up:hover {
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+}
+.treemap-container .tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 9999;
+}
+.treemap-container {
+  position: relative;
+  width: calc(100% - 0 * 2 * 1px);
+  height: calc(100% - 0 * 2 * 1px);
+  /* max-height: 800px; */
+  margin: 0 * 1px;
+  /* overflow: hidden; */
+  overflow: auto; /* allows scrolling within container */
+}
+.node {
+  position: absolute;
+  background: transparent url("") no-repeat 50% / cover;
+  /* border: 1px white solid; */
+  overflow: hidden;
+  opacity: 0.8;
+  transition: opacity 0.8s ease;
+  cursor: pointer;
+}
+.node .label {
+  display: inline;
+  font-family: sans-serif;
+  color: hsla(0, 0, 100, 0.6);
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: color 0.4s, opacity 0.8s, filter 0.8s;
+}
+.node.hide {
+  /* zoom in */
+  opacity: 0;
+  pointer-events: none;
+}
+.node.hide .label {
+  filter: blur(10px);
+}
+.node:hover .label {
+  color: hsla(0, 0, 100, 1);
+}
+.node.level-0 {
+  z-index: 4;
+  font-size: 1vmin;
+  display: none;
+  transition: opacity 0.8s ease-in-out;
+}
+.node.level-1 {
+  z-index: 3;
+  font-size: 1vmin;
+  transition: opacity 0.8s ease-in-out;
+}
+.node.level-2 {
+  opacity: 1;
+  z-index: 2;
+  font-size: 1vmin;
+  transition: opacity 0.8s ease-in-out;
+}
+.node.level-3 {
+  z-index: 1;
+  font-size: 0.5vmin;
+  transition: opacity 0.8s ease-in-out;
+}

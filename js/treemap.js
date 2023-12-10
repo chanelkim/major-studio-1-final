@@ -1,3 +1,6 @@
+// --------------------------------------------------------
+// Troubleshooting global variables
+// --------------------------------------------------------
 // Use treemapData
 // if (window.treemapData !== undefined) {
 //   console.log("--------------------------------");
@@ -6,8 +9,11 @@
 console.log("Using treemapData in otherScript:", window.treemapData);
 console.log("Using GLOBAL TREEMAP in treemap.js:", TREEMAP);
 
-// REFERENCES
+// ********************************************************
+// Treemap
+// references:
 // D3 Responsive Zoomable Treemap (D3 v4+) Aleksander Lenart; source: https://codepen.io/figle/pen/qapRZQ
+// ********************************************************
 
 // --------------------------------------------------------
 // VARIABLES
@@ -43,6 +49,13 @@ const tooltip = d3
   .attr("class", "tooltip")
   .style("opacity", 0);
 
+// bootstrap tooltip
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
@@ -197,11 +210,6 @@ function drawTreemap() {
       return color(d.data.name);
     })
     .on("click", zoom);
-  // .append("p")
-  // .attr("class", "label")
-  // .text(function (d) {
-  //   return d.data.name ? d.data.name : "---";
-  // });
 
   // --------------------------------------------------------
   // TOOL TIP
@@ -230,8 +238,10 @@ function drawTreemap() {
 
         tooltip
           .html(tooltipContent)
+          // .classed("treemap-tooltip", true)
           .style("left", event.pageX + "px")
-          .style("top", event.pageY + "px");
+          .style("top", event.pageY + "px")
+          .style("z-index", 9999);
       }
     })
     .on("mouseout", function () {
@@ -294,15 +304,32 @@ function drawTreemap() {
         return y(d.y1) - y(d.y0) + "%";
       })
       .style("background-image", function (d) {
-        // Check if the currentDepth is 1 and the node has imagematch data
-        if ((currentDepth === 1 || currentDepth === 2) && d.data.imagematch) {
-          // Set the background image using the imagematch data
+        // Check if the currentDepth is 2 and the node has imagematch data
+        if (currentDepth === 2 && d.data.imagematch) {
+          // Modify the image URL here for currentDepth === 2
+          const modifiedImageUrl = d.data.imagematch.replace(
+            "200,200",
+            "999,999"
+          );
+          return `url(${modifiedImageUrl})`;
+        } else if (currentDepth === 1 && d.data.imagematch) {
+          // Show the original image URL for currentDepth === 1
           return `url(${d.data.imagematch})`;
         }
         // Default to no background image
         return "none";
       })
+      .style("background-size", function (d) {
+        // "cover" at currentDepth:1 (frame within the cell), "contain" at currentDepth:2 (show the full image dimensions)
+        return currentDepth === 2 ? "contain" : "cover";
+      })
       .style("background-color", function (d) {
+        if (currentDepth === 2) {
+          // return "black";
+          return "#f5f0e6";
+          // return transparent;
+        }
+        // For depths other than 2, use the existing color logic
         while (d.depth > 2) d = d.parent;
         return color(d.data.name);
       });
@@ -326,13 +353,12 @@ function drawTreemap() {
 // --------------------------------------------------------
 // PRELOAD IMAGE FUNCTION
 // --------------------------------------------------------
-// function preloadImages(data) {
-function preloadImages(data) {
+function preloadImages(data, depth) {
   const preloadContainer = document.createElement("div");
   preloadContainer.style.display = "none";
 
-  // Flatten the hierarchicalData to get all imagematch URLs
-  const imageUrls = flattenData(data)
+  // Flatten the hierarchicalData to get all imagematch URLs at the specified depth
+  const imageUrls = flattenDataAtDepth(data, depth)
     .map((item) => item.imagematch)
     .filter(Boolean);
 
@@ -345,26 +371,67 @@ function preloadImages(data) {
   document.body.appendChild(preloadContainer);
 }
 
-// Function to flatten hierarchical data
-function flattenData(data) {
+// Function to flatten hierarchical data at a specific depth
+function flattenDataAtDepth(node, targetDepth, currentDepth = 0) {
   const result = [];
 
   function flatten(node) {
     if (node && node.data) {
-      result.push(node.data);
+      if (currentDepth === targetDepth) {
+        result.push(node.data);
+      }
 
       if (node.children) {
-        node.children.forEach(flatten);
+        node.children.forEach((childNode) => {
+          flatten(childNode, targetDepth, currentDepth + 1);
+        });
       }
     }
   }
 
-  flatten(data);
+  flatten(node);
 
   return result;
 }
 
+// Function to preload higher-resolution images
+function preloadHigherResolutionImages(data) {
+  if (!data || !Array.isArray(data)) {
+    console.error("Invalid data for preloading images:", data);
+    return;
+  }
+
+  const higherResolutionImageUrls = data
+    .filter((item) => item && item.imagematch)
+    .map((item) => item.imagematch.replace("200,200", "999,999"));
+
+  higherResolutionImageUrls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+// function preloadHigherResolutionImages(data) {
+//   const higherResolutionImageUrls = data
+//     .filter((item) => item.imagematch) // Filter out items without imagematch
+//     .map((item) => item.imagematch.replace("200,200", "999,999"));
+
+//   higherResolutionImageUrls.forEach((url) => {
+//     const img = new Image();
+//     img.src = url;
+//   });
+// }
+
 // Call the preloadImages function when the page is initiated
 window.addEventListener("load", function () {
   preloadImages(hierarchicalData);
+  preloadHigherResolutionImages(hierarchicalData);
+});
+
+// Adjust treemap-nav position based on scroll offset
+document.getElementById("chart").addEventListener("scroll", function () {
+  const treemapNav = document.getElementById("treemap-nav");
+  const scrollTop = this.scrollTop;
+  const scrollLeft = this.scrollLeft;
+  treemapNav.style.top = `${scrollTop}px`;
+  treemapNav.style.left = `${scrollLeft}px`;
 });
