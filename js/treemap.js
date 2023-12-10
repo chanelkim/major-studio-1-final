@@ -239,8 +239,8 @@ function drawTreemap() {
         tooltip
           .html(tooltipContent)
           // .classed("treemap-tooltip", true)
-          .style("left", event.pageX + "px")
-          .style("top", event.pageY + "px")
+          // .style("left", event.pageX + "px")
+          // .style("top", event.pageY + "px")
           .style("z-index", 9999);
       }
     })
