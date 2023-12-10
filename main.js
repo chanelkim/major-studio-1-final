@@ -21,7 +21,7 @@ let state = {
   treemap: {
     // text: "Contributors",
     svg: "#treemap-svg",
-    dataUrl: "data/IoAD_artists_imgs.json",
+    dataUrl: "data/IoAD_merged_geo_data.json",
   },
   statemap: {
     // text: "Map",

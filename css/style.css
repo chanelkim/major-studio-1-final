@@ -120,15 +120,15 @@
   height: calc(100% - 0 * 2 * 1px);
   /* max-height: 800px; */
   margin: 0 * 1px;
-  /* overflow: hidden; */
-  overflow: auto; /* allows scrolling within container */
+  overflow: hidden;
+  /* overflow: auto; allows scrolling within container */
 }
 .node {
   position: absolute;
-  background: transparent url("") no-repeat 50% / cover;
+  background: transparent no-repeat 50% / cover;
   /* border: 1px white solid; */
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity 0.8s ease;
   cursor: pointer;
 }

@@ -59,7 +59,7 @@ const tooltipList = [...tooltipTriggerList].map(
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
-d3.json("/data/IoAD_artists_imgs.json").then(function (data) {
+d3.json("/data/IoAD_merged_geo_data.json").then(function (data) {
   index = data;
   analyzeData();
   drawTreemap();
@@ -76,6 +76,8 @@ function analyzeData() {
     title = n.title;
     objectid = n.objectid;
     imagematch = n.imagematch;
+    geostate = n.geostate;
+    catstate = n.catstate;
 
     const artist = allArtists.find((p) => p.name === artistName);
 
@@ -87,7 +89,9 @@ function analyzeData() {
           {
             title: title,
             objectid: objectid,
-            imagematch: imagematch,
+            imagematch: imagematch || "Image not available",
+            geostate: geostate || "Unknown location",
+            catstate: catstate || "Unknown catalog state",
           },
         ],
         count: 1, // initialize count to 1
@@ -96,7 +100,9 @@ function analyzeData() {
       artist.titles.push({
         title: title,
         objectid: objectid,
-        imagematch: imagematch,
+        imagematch: imagematch || "Image not available",
+        geostate: geostate || "Unknown location",
+        catstate: catstate || "Unknown catalog state",
       });
       artist.count++;
     }
@@ -125,7 +131,8 @@ function analyzeData() {
             artistNode.children.push({
               name: title.title,
               objectid: title.objectid,
-              imagematch: title.imagematch,
+              imagematch: title.imagematch || "Image not available",
+              geostate: title.geostate || "Unknown location",
               value: 1,
             });
           }
@@ -224,23 +231,20 @@ function drawTreemap() {
         let tooltipContent = "";
         if (d.depth === 1) {
           tooltipContent = `
+          ${d.data.children[0].geostate || "Unknown location"}
           <h3>${d.data.name}</h3>
-          <h2><strong>${d.data.count} works</strong></h2>`;
+          <h2><strong>${d.data.count}works</strong></h2>`;
         } else if (d.depth === 2) {
           tooltipContent = `
+          ${d.data.geostate}
           <h3>${d.parent.data.name}</h3>
           <h2><strong>${d.data.name}</strong></h2>`;
         } else {
           tooltipContent = `
           <h3>${d.parent.data.name}</h3>`;
         }
-
-        tooltip
-          .html(tooltipContent)
-          // .classed("treemap-tooltip", true)
-          // .style("left", event.pageX + "px")
-          // .style("top", event.pageY + "px")
-          .style("z-index", 9999);
+        // CSS style (.treemap-container .tooltip)
+        tooltip.html(tooltipContent);
       }
     })
     .on("mouseout", function () {
