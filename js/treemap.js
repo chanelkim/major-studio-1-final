@@ -224,8 +224,7 @@ function drawTreemap() {
         let tooltipContent = "";
         if (d.depth === 1) {
           tooltipContent = `
-          <h2><strong>${d.data.name}</strong></h2>
-          <h3>Contributor</h3>
+          <h3>${d.data.name}</h3>
           <h2><strong>${d.data.count} works</strong></h2>`;
         } else if (d.depth === 2) {
           tooltipContent = `
