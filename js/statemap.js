@@ -75,13 +75,6 @@ function drawMap(us, statecount) {
   svg = d3
     .select(".statemap-container")
     .append("svg")
-    //   const svg = d3
-    //     .select("#map")
-    //     .append("svg")
-    // .attr("viewBox", [0, 0, mapWidth, mapHeight])
-    // .attr("width", mapWidth)
-    // .attr("height", mapHeight)
-    // .attr("style", "max-width: 100%; height: auto;")
     .attr("viewBox", "0 0 " + mapWidth + " " + mapHeight)
     .attr("preserveAspectRatio", "xMidYMid meet")
     .on("click", reset);
