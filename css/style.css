@@ -94,7 +94,8 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-/* TREEMAP */
+/* --------------- CATALOG ------------- */
+/* --------------- TREEMAP ------------- */
 /* .element {
   margin: 0;
 } */
@@ -198,4 +199,28 @@
   z-index: 1;
   font-size: 0.5vmin;
   transition: opacity 0.8s ease-in-out;
+}
+/* --------------- STATE MAP ------------- */
+#map {
+  margin: auto;
+  height: 100%;
+}
+.state {
+  stroke-width: 1;
+  stroke: black;
+  fill: #c8d2dc;
+  transition: all 0.25s ease-in-out;
+}
+.state:hover {
+  cursor: pointer;
+  fill: #5a50b4;
+}
+.statemap-container {
+  position: relative;
+  width: calc(100% - 0 * 2 * 1px);
+  height: calc(100% - 0 * 2 * 1px);
+  margin: 0 * 1px;
+  overflow: hidden;
+  /* overflow: scrolling; */
+  /* allows scrolling within container */
 }

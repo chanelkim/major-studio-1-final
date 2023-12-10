@@ -17,24 +17,6 @@ console.log("Using catalogData in otherScript:", window.catalogData);
 // // Map themes to subsections
 // const themeRelations = relateThemes(window.catalogData);
 
-// // ----------------TEST------------------
-// const dataBySection = groupDataBySection(window.catalogData);
-// console.log("dataBySection:", dataBySection);
-// console.log("query particular section:", dataBySection.get(2));
-
-// const dataBySectionTheme = d3.group(
-//   window.catalogData,
-//   (d) => d.section,
-//   (d) => d.theme
-// );
-// console.log("sectionTheme:", dataBySectionTheme);
-
-// const dataBySectioncategory = d3.index(
-//   window.catalogData,
-//   //   (v) => v.length,
-//   (d) => d.theme
-// );
-// console.log("sectioncategory:", dataBySectioncategory);
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
