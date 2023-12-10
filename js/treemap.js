@@ -77,6 +77,8 @@ function analyzeData() {
     objectid = n.objectid;
     imagematch = n.imagematch;
     geostate = n.geostate;
+    geodivision = n.geodivision;
+    georegion = n.georegion;
     catstate = n.catstate;
 
     const artist = allArtists.find((p) => p.name === artistName);
@@ -90,7 +92,9 @@ function analyzeData() {
             title: title,
             objectid: objectid,
             imagematch: imagematch || "Image not available",
-            geostate: geostate || "Unknown location",
+            geodivision: geodivision || "Unknown regional division",
+            georegion: georegion || "Unknown region",
+            geostate: geostate || "Unknown state",
             catstate: catstate || "Unknown catalog state",
           },
         ],
@@ -101,7 +105,9 @@ function analyzeData() {
         title: title,
         objectid: objectid,
         imagematch: imagematch || "Image not available",
-        geostate: geostate || "Unknown location",
+        geodivision: geodivision || "Unknown regional division",
+        georegion: georegion || "Unknown region",
+        geostate: geostate || "Unknown state",
         catstate: catstate || "Unknown catalog state",
       });
       artist.count++;
@@ -132,7 +138,9 @@ function analyzeData() {
               name: title.title,
               objectid: title.objectid,
               imagematch: title.imagematch || "Image not available",
-              geostate: title.geostate || "Unknown location",
+              geodivision: title.geodivision || "Unknown regional division",
+              georegion: title.georegion || "Unknown region",
+              geostate: title.geostate || "Unknown state",
               value: 1,
             });
           }
@@ -231,12 +239,16 @@ function drawTreemap() {
         let tooltipContent = "";
         if (d.depth === 1) {
           tooltipContent = `
-          ${d.data.children[0].geostate || "Unknown location"}
-          <h3>${d.data.name}</h3>
-          <h2><strong>${d.data.count}works</strong></h2>`;
+          ${d.data.children[0].georegion || "Unknown region"} (${
+            d.data.children[0].geostate || "Unknown state"
+          })
+          <h3>${d.data.name || "Unknown contributor"}</h3>
+          <h2><strong>${
+            d.data.count
+          }</strong><span class="h4"> contributions</span></h2>`;
         } else if (d.depth === 2) {
           tooltipContent = `
-          ${d.data.geostate}
+          ${d.data.geostate || "Unknown state"}
           <h3>${d.parent.data.name}</h3>
           <h2><strong>${d.data.name}</strong></h2>`;
         } else {

@@ -68,17 +68,41 @@ body {
   font-family: "NeueMontreal-Regular", sans-serif;
 }
 h1 {
-  font-family: "NeueMontreal-Light", sans-serif;
+  font-family: "NeueMontreal-Regular", sans-serif;
   font-size: 3rem;
+  letter-spacing: -0.1rem;
 }
 h2 {
   font-family: "FormulaCondensed-Regular", sans-serif;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+h4 {
+  font-family: "FormulaCondensed-Regular", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
 p {
   font-size: 1rem;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.04rem;
+}
+.section-head-box {
+  // font-size: 1.5rem;
+  // padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.section-head-box h4 {
+  font-family: "FormulaCondensed-Light", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0rem;
+}
+.section-head-box p {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0rem;
 }
 
 // Navbar

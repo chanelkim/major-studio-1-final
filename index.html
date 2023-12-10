@@ -24,13 +24,13 @@
         role="button"
         aria-controls="sidebar"
         >Index
-        <img
+        <!-- <img
           src="svgs/arrow.svg"
           alt="arrow"
           width="24"
           height="24"
           class="d-inline-block p-1"
-        />
+        /> -->
         of American Design
       </a>
       <button
@@ -51,7 +51,7 @@
               :active
               aria-current="page"
               href="#catalog-section"
-              >Catalog <span class="visually-hidden">(current)</span></a
+              >Themes <span class="visually-hidden">(current)</span></a
             >
           </li>
           <li class="nav-item pe-2">
@@ -61,7 +61,10 @@
             <a class="nav-link" href="#statemap-section">Map</a>
           </li>
           <li class="nav-item pe-2">
-            <a class="nav-link" href="#objects-section">Home</a>
+            <a class="nav-link" href="#objects-section">All Objects</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" id="home-link" href="#home">Home</a>
           </li>
         </ul>
       </div>
@@ -72,11 +75,13 @@
     <!-- source: https://youtu.be/_bZWi85TpI0?si=7ZaJhztDQe0HhJdy -->
     <div class="landing-bg" id="home">
       <div class="landing-text">
-        <h1>Cataloging the Index</h1>
+        
+        <h1>Cataloging<br>Connections</h1>
         <img class="landing-gif" src="media/intro.gif" alt="objects gif" />
-        <h1>of American Design</h1>
+        <!-- <h1>Connecting the Catalog</h1> -->
+        <h2>Visualizing the Index of American Design</h2>
         <p>
-          A project tracing the themes, contributors and geographies of a
+          A project tracing the themes, contributors and geographies<br>of a
           historic national work relief arts project.
         </p>
         <a
@@ -96,10 +101,12 @@
         id="catalog-section"
         title="catalog-section"
       >
-        <div class="section-head">
-          <h1>Catalog (Qualitative)</h1>
-          <p>Grouping objects of the Index by theme</p>
-        </div>
+      <div class="section-head col d-flex align-items-center">
+        <h1 class="col-lg-8 flex-grow-1 me-2">
+          Themes
+        </h1>
+        <div class="section-head-box col-lg-4 border border-1 border-black d-inline-block"><h4>Qualitative Approach</h4><p>Grouping objects of the Index by thematic hierarchy, using organizing principles provided in "The Consolidated Catalog to The Index of American Design"</p></div>
+      </div>
         <div class="" width="100%" height="100%">
           <!-- <svg class="svg" id="catalog-svg">
             <rect x="0" y="0" fill="yellow"></rect>
@@ -385,12 +392,11 @@
         id="treemap-section"
         title="treemap-section"
       >
-        <div class="section-head">
-          <h1>
-            Contributors<br />
-            aka Treemap (Quantitative)
+        <div class="section-head col d-flex align-items-center">
+          <h1 class="col-lg-8 flex-grow-1 me-2">
+            Contributors
           </h1>
-          <p>Grouping objects of the Index by contributor or artist</p>
+          <div class="section-head-box col-lg-4 border border-1 border-black d-inline-block"><h4>Quantitative Approach</h4><p>Grouping objects of the Index by contribution count</p></div>
         </div>
         <div class="" width="100%" height="100%">
           <div class="treemap-container" id="chart">
@@ -406,13 +412,12 @@
         id="statemap-section"
         title="statemap-section"
       >
-        <div class="section-head">
-          <h1>
-            Map<br />
-            aka Statemap (Spatial)
-          </h1>
-          <p>Locating objects of the Index to U.S. geography</p>
-        </div>
+      <div class="section-head col d-flex align-items-center">
+        <h1 class="col-lg-8 flex-grow-1 me-2">
+          Map
+        </h1>
+        <div class="section-head-box col-lg-4 border border-1 border-black d-inline-block"><h4>Spatial Approach</h4><p>Grouping objects of the Index by geography, as provided in "The Consolidated Catalog to The Index of American Design"</p></div>
+      </div>
         <div class="" width="100%" height="100%">
           <svg class="svg" id="statemap-svg">
             <rect x="0" y="0" fill="red"></rect>
@@ -425,15 +430,12 @@
         id="objects-section"
         title="objects-section"
       >
-        <div class="section-head">
-          <h1>
-            Home<br />
-            aka Objects (Spatial)
-          </h1>
-          <p>
-            Introduction and cards of all objects by objectid (endless scroll)
-          </p>
-        </div>
+      <div class="section-head col d-flex align-items-center">
+        <h1 class="col-lg-8 flex-grow-1 me-2">
+          All Objects
+        </h1>
+        <div class="section-head-box col-lg-4 border border-1 border-black d-inline-block"><h4>Visual Approach</h4><p>Displaying an overview of all objects in the Index - ordered by matching title text - using natural language processing (NPL) techniques</p></div>
+      </div>
         <div class="" width="100%" height="100%">
           <svg class="svg" id="objects-svg">
             <rect x="0" y="0" fill="blue"></rect>

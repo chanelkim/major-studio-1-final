@@ -23,6 +23,11 @@
   width: 100%;
   background: no-repeat center center fixed;
 }
+#home-link {
+  font-family: "NeueMontreal-Light", sans-serif;
+  /* opacity: 0.7; */
+  letter-spacing: 0;
+}
 #home:before {
   content: " ";
   display: table;
@@ -42,22 +47,39 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  padding: 10rem 0;
+  padding: 8rem 10%;
   opacity: 0.9;
 }
 .landing-text h1 {
-  font-size: 500%;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 8rem;
   /* text-shadow: 0 2px 10px rgba(255, 255, 255, 0.6); */
   margin-bottom: 1rem;
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
   line-height: 90%;
+  letter-spacing: -0.2rem;
+}
+.landing-text h2 {
+  font-family: "FormulaCondensed-Light", sans-serif;
+  font-size: 150%;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: -0.7rem;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  /* line-height: 200%; */
+  /* letter-spacing: -0.2rem; */
 }
 .landing-text p {
   font-size: 1.2rem;
   font-weight: 300;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-top: 1rem;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  padding-bottom: -1rem;
   letter-spacing: -0.05rem;
 }
 .landing-gif {
@@ -79,7 +101,7 @@
 #treemap-nav {
   position: absolute;
   /* position: relative; */
-  width: 100%;
+  /* width: 100%; */
   top: 0;
   left: 0;
   padding: 16px;
