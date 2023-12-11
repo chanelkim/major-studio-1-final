@@ -92,9 +92,12 @@ d3.json(titlesDataPath).then((titlesData) => {
               name: item.attributioninverted,
               title: item.title,
               objectID: item.objectid,
-              url: item.imagematch,
+              url: item.imagematch || "Image not available",
               beginyear: item.beginyear,
               endyear: item.endyear,
+              geodivision: item.geodivision || "Unknown regional division",
+              georegion: item.georegion || "Unknown region",
+              geostate: item.geostate || "Unknown state",
             });
           }
         });
@@ -109,6 +112,9 @@ d3.json(titlesDataPath).then((titlesData) => {
       artist: item.name,
       title: item.title,
       imagematch: item.url,
+      geodivision: item.geodivision,
+      georegion: item.georegion,
+      geostate: item.geostate,
     }));
     // Log the matched titles
     displayImages(imagesData);
@@ -159,7 +165,7 @@ function displayImages(json) {
   // word match & object id
   card
     .append("p")
-    .attr("class", "wordmatch")
+    .attr("class", "objectid")
     .html((d) => {
       return `Object ID: ${d.id}`;
     })
@@ -184,58 +190,13 @@ function displayImages(json) {
       return `<strong>${d.artist}</strong>`;
     })
     .append("p")
+    .attr("class", "geolocation")
+    .html((d) => {
+      return `${d.georegion}, ${d.geodivision} - ${d.geostate}`;
+    })
+    .append("p")
     .attr("class", "years")
     .html((d) => {
       return `(${d.beginyear} - ${d.endyear})`;
     });
 }
-
-// // ---------- NATURAL LIBRARY (NPL) ----------
-// // const natural = require("natural");
-
-// // Load the JSON files
-// const wordsDataPath = "data/textLinks-results-v2.json";
-// const titlesDataPath = "data/IoAD.json";
-
-// // Function to perform stemming on a word
-// const stemWord = (word) => {
-//   const stemmer = natural.PorterStemmer;
-//   return stemmer.stem(word);
-// };
-
-// // Create a map of stemmed words
-// const stemmedWords = new Map();
-
-// // Use D3.js to load the JSON file for words
-// d3.json(wordsDataPath).then((wordsData) => {
-//   // Stem each word and store it in the map
-//   wordsData.forEach((wordObject) => {
-//     const word = wordObject.Word;
-//     const stemmedWord = stemWord(word);
-//     stemmedWords.set(stemmedWord, word);
-//   });
-
-//   // Use D3.js to load the JSON file for titles
-//   d3.json(titlesDataPath).then((titlesData) => {
-//     // Match the stemmed words with titles
-//     const matchedTitles = [];
-
-//     titlesData.forEach((title) => {
-//       const titleWords = title.toLowerCase().split(" "); // Split the title into words
-
-//       titleWords.forEach((word) => {
-//         const stemmedWord = stemWord(word);
-//         if (stemmedWords.has(stemmedWord)) {
-//           const originalWord = stemmedWords.get(stemmedWord);
-//           matchedTitles.push({
-//             word: originalWord,
-//             title: title,
-//           });
-//         }
-//       });
-//     });
-
-//     // Log the matched titles
-//     console.log(matchedTitles);
-//   });
-// });
