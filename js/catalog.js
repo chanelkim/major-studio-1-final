@@ -20,7 +20,7 @@ console.log("Using catalogData in otherScript:", window.catalogData);
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
-d3.json("/data/catalog_cleaned.json").then(function (data) {
+d3.json("data/catalog_cleaned.json").then(function (data) {
   groupDataBySection(data);
   generateButtons(data);
 });

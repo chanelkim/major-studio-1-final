@@ -59,7 +59,7 @@ const tooltipList = [...tooltipTriggerList].map(
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
-d3.json("/data/IoAD_merged_geo_data.json").then(function (data) {
+d3.json("data/IoAD_merged_geo_data.json").then(function (data) {
   index = data;
   analyzeData();
   drawTreemap();
