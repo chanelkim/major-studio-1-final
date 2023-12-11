@@ -224,3 +224,31 @@
   /* overflow: scrolling; */
   /* allows scrolling within container */
 }
+/* --------------- OBJECTS ------------- */
+.objects-container {
+  position: relative;
+  width: calc(100% - 0 * 2 * 1px);
+  height: calc(100% - 0 * 2 * 1px);
+  margin: 0 * 1px;
+  overflow: hidden;
+  /* overflow: scrolling; */
+  /* allows scrolling within container */
+}
+#chart-objects {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  /* overflow: auto; */
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+.card {
+  padding: 1rem;
+}

@@ -109,7 +109,7 @@ function drawMap(us, statecount) {
   //   // TOOL TIP
   //   // --------------------------------------------------------
   //   const tooltip = d3
-  //     .select("#chart-2")
+  //     .select("#chart-states")
   //     .append("div")
   //     .attr("class", "tooltip")
   //     .style("opacity", 0);

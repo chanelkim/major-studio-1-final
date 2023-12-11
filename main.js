@@ -14,24 +14,16 @@ let OBJECTS;
 let state = {
   data: null, // Placeholder for the loaded data
   catalog: {
-    // text: "Catalog",
-    svg: "#catalog-svg",
     dataUrl: "data/catalog_cleaned.json",
   },
   treemap: {
-    // text: "Contributors",
-    svg: "#treemap-svg",
     dataUrl: "data/IoAD_merged_geo_data.json",
   },
   statemap: {
-    // text: "Map",
-    svg: "#statemap-svg",
     dataUrl: ["data/stateCount.json", "data/us.json"], // array of data sources,
   },
   objects: {
-    // text: "Home",
-    svg: "#objects-svg",
-    dataUrl: "data/test.json",
+    dataUrl: "data/textLinks-results-v2.json",
   },
 };
 
