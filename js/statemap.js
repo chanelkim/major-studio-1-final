@@ -14,35 +14,8 @@ console.log("Using statemapData in otherScript:", window.statemapData);
 // --------------------------------------------------------
 // VARIABLES
 // --------------------------------------------------------
-// let usdata = d3.json("data/us.json");
-// let statecount = d3.json("data/stateCount.json");
-// console.log(usdata);
-// console.log(statecount);
 const mapWidth = 975;
 const mapHeight = 610;
-let max;
-let min;
-
-const geoObjectNone = {
-  state: [
-    "Alaska",
-    "Arkansas",
-    "Hawaii",
-    "Idaho",
-    "Indiana",
-    "Mississippi",
-    "Montana",
-    "Nebraska",
-    "Nevada",
-    "North Carolina",
-    "North Dakota",
-    "Oklahoma",
-    "Oregon",
-    "South Dakota",
-    "West Virginia",
-    "Wyoming",
-  ],
-};
 
 // Draw the map
 function drawMap(us, statecount) {
@@ -59,18 +32,74 @@ function drawMap(us, statecount) {
       : feature.properties;
     return { ...feature, properties: mergedProperties };
   });
-  const mergedGeoJSON = {
-    type: "FeatureCollection",
-    features: mergedFeatures,
-  };
-  console.log("Merged US:", mergedGeoJSON);
-  merged = mergedGeoJSON;
 
   const interiors = topojson.mesh(us, us.objects.states, (a, b) => a !== b);
 
   const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", zoomed);
 
-  const colorScale = d3.scaleSequential(d3.interpolateBlues).domain([min, max]);
+  // Extract contrcount values for color scale domain
+  const contrcounts = mergedFeatures.map(
+    (feature) => feature.properties.contrcount
+  );
+  const countMin = d3.min(contrcounts);
+  const countMax = d3.max(contrcounts);
+
+  // const colorScale = d3
+  //   // .scaleSequential(d3.interpolateBlues)
+  //   .scaleSequential(d3.interpolateTurbo)
+  //   .domain([countMin, countMax]);
+
+  const customColorScale = d3
+    .scaleSequential(customInterpolator)
+    .domain([countMin, countMax]);
+
+  // Define a hash pattern for zero count
+  svg
+    .append("defs")
+    .append("pattern")
+    .attr("id", "hashPattern")
+    .attr("patternUnits", "userSpaceOnUse")
+    .attr("width", 15)
+    .attr("height", 15)
+    .append("rect")
+    .attr("width", 15)
+    .attr("height", 15)
+    .attr("fill", "#C8D2DC"); // grey
+
+  // Add lines to the hash pattern
+  d3.select("#hashPattern")
+    .append("line")
+    .attr("x1", 0)
+    .attr("y1", 0)
+    .attr("x2", 15)
+    .attr("y2", 15)
+    .attr("stroke", "black")
+    .attr("stroke-width", 1);
+
+  // Add lines to the hash pattern
+  d3.select("#hashPattern")
+    .append("line")
+    .attr("x1", 0)
+    .attr("y1", 15)
+    .attr("x2", 15)
+    .attr("y2", 0)
+    .attr("stroke", "black")
+    .attr("stroke-width", 1);
+
+  // Fill in zero count for missing states and apply color
+  const statesWithColor = mergedFeatures.map((feature) => {
+    const count = feature.properties.contrcount || 0;
+    // const fillColor = count > 0 ? colorScale(count) : "url(#hashPattern)";
+    const fillColor = count > 0 ? customColorScale(count) : "url(#hashPattern)";
+    return { ...feature, properties: { ...feature.properties, fillColor } };
+  });
+
+  const mergedGeoJSON = {
+    type: "FeatureCollection",
+    features: statesWithColor,
+  };
+  console.log("Merged US:", mergedGeoJSON);
+  merged = mergedGeoJSON;
 
   svg = d3
     .select(".statemap-container")
@@ -85,14 +114,16 @@ function drawMap(us, statecount) {
 
   const states = g
     .append("g")
-    .attr("fill", "#444")
     .attr("cursor", "pointer")
     .selectAll("path")
     .data(merged.features)
     .join("path")
     .on("click", clicked)
+    .on("mouseover", handleMouseOver)
+    .on("mouseout", handleMouseOut)
     .attr("d", path)
-    .attr("class", "state");
+    .attr("class", "state")
+    .style("fill", (d) => d.properties.fillColor);
 
   states.append("title").text((d) => d.properties.name);
 
@@ -103,49 +134,47 @@ function drawMap(us, statecount) {
     .attr("stroke-linejoin", "round")
     .attr("d", path(interiors));
 
-  svg.call(zoom);
+  // svg.call(zoom); // delete this line to disable free zooming
 
-  //   //   --------------------------------------------------------
-  //   // TOOL TIP
-  //   // --------------------------------------------------------
-  //   const tooltip = d3
-  //     .select("#chart-states")
-  //     .append("div")
-  //     .attr("class", "tooltip")
-  //     .style("opacity", 0);
-  //   states
-  //     .on("mouseover", function (event, d) {
-  //       // Show the tooltip on mouseover for depths other than 0
+  // --------------------------------------------------------
+  // CUSTOM COLORS & LEGEND
+  // --------------------------------------------------------
+  // Custom interpolate function for a range of colors
+  function customInterpolator(t) {
+    const color1 = "#3C5064"; // metal
+    const color2 = "#F0B43C"; // gold
+    const interpolatedColor = d3.interpolateRgb(color1, color2)(t);
+    return interpolatedColor;
+  }
 
-  //       tooltip.transition().duration(200).style("opacity", 0.9);
+  // Create a color key (legend)
+  const numSwatches = 10;
 
-  //       // Customize the tooltip content based on depth
-  //       let tooltipContent = "";
-  //       if (d.depth === 1) {
-  //         tooltipContent = `
-  //           ${d.data.children[0].georegion || "Unknown region"} (${
-  //           d.data.children[0].geostate || "Unknown state"
-  //         })
-  //           <h3>${d.data.name || "Unknown contributor"}</h3>
-  //           <h2><strong>${
-  //             d.data.count
-  //           }</strong><span class="h4"> contributions</span></h2>`;
-  //       } else if (d.depth === 2) {
-  //         tooltipContent = `
-  //           ${d.data.geostate || "Unknown state"}
-  //           <h3>${d.parent.data.name}</h3>
-  //           <h2><strong>${d.data.name}</strong></h2>`;
-  //       } else {
-  //         tooltipContent = `
-  //           <h3>${d.parent.data.name}</h3>`;
-  //       }
-  //       // CSS style (.treemap-container .tooltip)
-  //       tooltip.html(tooltipContent);
-  //     })
-  //     .on("mouseout", function () {
-  //       // Hide the tooltip on mouseout
-  //       tooltip.transition().duration(500).style("opacity", 0);
-  //     });
+  const colorKey = d3
+    .select("#chart-states") // You can select the container where you want to append the key
+    .append("div")
+    .attr("class", "color-key");
+
+  const keyColorScale = d3
+    .scaleSequential(customInterpolator)
+    .domain([0, numSwatches - 1]);
+
+  const colorSwatches = colorKey
+    .selectAll(".color-swatch")
+    .data(d3.range(numSwatches)) // Generate values between 0 and 1 for color interpolation
+    .enter()
+    .append("div")
+    .attr("class", "color-swatch")
+    .style("background-color", (d) => keyColorScale(d));
+
+  colorSwatches
+    .append("div")
+    .attr("class", "color-label")
+    .text((d) => {
+      if (d === 0) return countMin + 1; // Label for the first swatch (min value)
+      if (d === numSwatches - 1) return countMax; // Label for the last swatch (max value)
+      return ""; // Labels for other swatches (empty)
+    });
 
   // --------------------------------------------------------
   // FUNCTIONS
@@ -190,7 +219,7 @@ function drawMap(us, statecount) {
       reset();
     } else {
       // Zoom in
-      d3.select(this).transition().style("fill", "#64281E"); // color of state when clicked (brown)
+      d3.select(this).transition().style("fill", "#F0B43C"); // color of state when clicked (blue)
       svg
         .transition()
         .duration(750)
@@ -214,9 +243,44 @@ function drawMap(us, statecount) {
     const { transform } = event;
     g.attr("transform", transform);
     g.attr("stroke-width", 1 / transform.k);
+
+    // Update fill color during zoom
+    states.style("fill", (d) => d.properties.fillColor);
   }
 
   return svg.node();
+}
+
+// --------------------------------------------------------
+// TOOL TIP
+// --------------------------------------------------------
+
+// Hover color handling functions
+function handleMouseOver(event, d) {
+  d3.select(this).style("fill", "#64281E"); // hover color
+
+  // Show custom tooltip
+  const customTooltip = document.getElementById("map-tooltip");
+  const tooltipContent = `<h3>${
+    d.properties.name
+  }</h3><br><span class="h4">contributions</span><h2><strong> ${
+    d.properties.contrcount || 0
+  }</strong></h2>`;
+
+  customTooltip.innerHTML = tooltipContent;
+
+  const [x, y] = d3.pointer(event);
+  customTooltip.style.display = "block";
+  customTooltip.style.left = x + 20 + "px";
+  customTooltip.style.top = y + 20 + "px";
+}
+
+function handleMouseOut(event, d) {
+  d3.select(this).style("fill", (d) => d.properties.fillColor); // go back to the original fill color
+
+  // Hide custom tooltip
+  const customTooltip = document.getElementById("map-tooltip");
+  customTooltip.style.display = "none";
 }
 
 // --------------------------------------------------------

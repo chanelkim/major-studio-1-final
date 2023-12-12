@@ -208,13 +208,12 @@
 .state {
   stroke-width: 1;
   stroke: black;
-  fill: #c8d2dc;
   transition: all 0.25s ease-in-out;
 }
-.state:hover {
+/* .state:hover {
   cursor: pointer;
-  fill: #5a50b4;
-}
+  fill: #64281e;
+} */
 .statemap-container {
   position: relative;
   width: calc(100% - 0 * 2 * 1px);
@@ -223,6 +222,37 @@
   overflow: hidden;
   /* overflow: scrolling; */
   /* allows scrolling within container */
+}
+.map-tooltip {
+  position: fixed;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  border-radius: 10px;
+  /* pointer-events: none; */
+  z-index: 9999;
+}
+.color-key {
+  display: flex;
+  flex-direction: row;
+}
+.color-swatch {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 5px;
+}
+.color-label {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: black;
+  font-family: "FormulaCondensed-Regular", sans-serif;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 /* --------------- OBJECTS ------------- */
 .objects-container {
