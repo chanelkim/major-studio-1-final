@@ -181,10 +181,11 @@
   margin: 0;
   /* top: 50%; */
   /* left: 50%; */
-  transform: translateX(-50%) translateY(-50%);
+  /* transform: translateX(-50%) translateY(-50%); */
   border-radius: 10px;
   pointer-events: none;
   z-index: 9999;
+  /* overflow: auto; */
 }
 .treemap-container {
   position: relative;
@@ -193,7 +194,8 @@
   /* max-height: 800px; */
   margin: 0 * 1px;
   overflow: hidden;
-  /* overflow: auto; allows scrolling within container */
+  /* overflow: auto; */
+  /* allows scrolling within container */
 }
 .node {
   position: absolute;
@@ -204,7 +206,7 @@
   transition: opacity 0.8s ease;
   cursor: pointer;
 }
-.node .label {
+/* .node .label {
   display: inline;
   font-family: sans-serif;
   color: hsla(0, 0, 100, 0.6);
@@ -215,7 +217,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   transition: color 0.4s, opacity 0.8s, filter 0.8s;
-}
+} */
 .node.hide {
   /* zoom in */
   opacity: 0;

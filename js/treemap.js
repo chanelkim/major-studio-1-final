@@ -240,58 +240,93 @@ function drawTreemap() {
   // --------------------------------------------------------
   // TOOL TIP
   // --------------------------------------------------------
-  // const tooltip = chart
-  //   .selectAll(".node")
-  //   .append("div")
-  //   .attr("class", "tooltip level-" + d.depth)
-  //   .style("opacity", 0);
-
-  cells
+  chart
+    .selectAll(".node")
     .on("mouseover", function (event, d) {
+      const currentTooltip = tooltip;
       // Show the tooltip on mouseover for depths other than 0
       if (d.depth !== 0) {
         tooltip.transition().duration(200).style("opacity", 0.9);
 
-        // Customize the tooltip content based on depth
+        // Customize the tooltip content
         let tooltipContent = "";
-
-        // Adjust the tooltip position based on cell position
-        // const tooltipX = x(d.x0) + margin.left;
-        // const tooltipY = y(d.y0) + margin.top;
-        const tooltipX = x(d.x0);
-        const tooltipY = y(d.y0);
 
         if (d.depth === 1) {
           tooltipContent = `
-          ${d.data.children[0].georegion || "Unknown region"} (${
+                ${d.data.children[0].georegion || "Unknown region"} (${
             d.data.children[0].geostate || "Unknown state"
           })
-          <h3>${d.data.name || "Unknown contributor"}</h3>
-          <h2><strong>${
-            d.data.count
-          }</strong><span class="h4"> contributions</span></h2>`;
+                <h3>${d.data.name || "Unknown contributor"}</h3>
+                <h2><strong>${
+                  d.data.count
+                }</strong><span class="h4"> contributions</span></h2>`;
         } else if (d.depth === 2) {
           tooltipContent = `
-          ${d.data.geostate || "Unknown state"}
-          <h3>${d.parent.data.name}</h3>
-          <h2><strong>${d.data.name}</strong></h2>`;
+                ${d.data.geostate || "Unknown state"}
+                <h3>${d.parent.data.name}</h3>
+                <h2><strong>${d.data.name}</strong></h2>`;
         } else {
           tooltipContent = `
-          <h3>${d.parent.data.name}</h3>`;
+                <h3>${d.parent.data.name}</h3>`;
         }
-        // CSS style (.treemap-container .tooltip)
-        tooltip
-          .style("left", tooltipX + "px")
-          .style("top", tooltipY + "px")
+
+        // Set the content of the tooltip
+        tooltip.html(tooltipContent);
+
+        // --------------------------------------------------------
+        // MAKING SURE TOOL TIP DOES NOT GO OUT OF BOUNDS
+        // --------------------------------------------------------
+
+        // Measure the size of the tooltip
+        const tooltipNode = tooltip.node();
+        const tooltipRect = tooltipNode.getBoundingClientRect();
+        const tooltipWidth = tooltipRect.width;
+        const tooltipHeight = tooltipRect.height;
+
+        const tooltipX = x(d.x0);
+        const tooltipY = y(d.y0);
+
+        // Log for debugging
+        // console.log("Tooltip position:", tooltipX, tooltipY);
+
+        // Check if the tooltip will be outside the container
+        const containerWidth = chart.node().getBoundingClientRect().width;
+        const containerHeight = chart.node().getBoundingClientRect().height;
+
+        // Translate percentage-based coordinates to pixels
+        const translatedX = (containerWidth * tooltipX) / 100;
+        const translatedY = (containerHeight * tooltipY) / 100;
+
+        // Adjust tooltip position if it would be outside the container
+        const adjustedX = Math.min(translatedX, containerWidth - tooltipWidth);
+        const adjustedY = Math.min(
+          translatedY,
+          containerHeight - tooltipHeight
+        );
+
+        // Check if the tooltip is near the edges
+        const nearEdgeX = tooltipX < 10 || tooltipX > 90;
+        const nearEdgeY = tooltipY < 10 || tooltipY > 90;
+
+        // Use adjusted coordinates for edges, otherwise use translated coordinates
+        const finalX = nearEdgeX ? adjustedX : translatedX;
+        const finalY = nearEdgeY ? adjustedY : translatedY;
+
+        // Set the content and position of the tooltip
+        currentTooltip
           .html(tooltipContent)
+          .style("left", finalX + "px")
+          .style("top", finalY + "px")
           .transition()
           .duration(200)
           .style("opacity", 0.9);
       }
     })
     .on("mouseout", function () {
+      // Access the tooltip using the variable declared outside the function
+      const currentTooltip = tooltip;
       // Hide the tooltip on mouseout
-      tooltip.transition().duration(500).style("opacity", 0);
+      currentTooltip.transition().duration(500).style("opacity", 0);
     });
 
   // --------------------------------------------------------
