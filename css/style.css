@@ -1,5 +1,5 @@
+/* --------------- MAIN ------------- */
 .code-note {
-  color: gray;
   font-size: 1rem;
   padding-top: 10rem;
   padding-bottom: 1rem;
@@ -23,7 +23,8 @@
 #objects-svg {
   background-color: blue;
 }
-/* LANDING PAGE */
+
+/* --------------- LANDING PAGE ------------- */
 #home {
   display: table;
   position: relative;
@@ -60,7 +61,6 @@
 .landing-text h1 {
   font-family: "NeueMontreal-Regular", sans-serif;
   font-size: 8rem;
-  /* text-shadow: 0 2px 10px rgba(255, 255, 255, 0.6); */
   margin-bottom: 1rem;
   /* padding-left: 10%;
   padding-right: 10%; */
@@ -101,7 +101,47 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+
 /* --------------- CATALOG ------------- */
+.arrow {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+#responsive-arrow {
+  max-width: 100%;
+  height: auto;
+}
+#category {
+  /* position: relative; */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "FormulaCondensed-Bold";
+  margin: auto;
+}
+#subcategory {
+  position: relative;
+  font-size: 20px;
+  font-family: "NeueMontreal-Regular";
+}
+#type {
+  /* position: relative; */
+  font-size: 14px;
+  font-family: "NeueMontreal-Regular";
+}
+/* #component {
+  background-color: "#3C5064";
+} */
+
 /* --------------- TREEMAP ------------- */
 /* .element {
   margin: 0;
@@ -207,6 +247,7 @@
   font-size: 0.5vmin;
   transition: opacity 0.8s ease-in-out;
 }
+
 /* --------------- STATE MAP ------------- */
 #map {
   margin: auto;
@@ -257,6 +298,7 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+
 /* --------------- OBJECTS ------------- */
 .objects-container {
   position: relative;

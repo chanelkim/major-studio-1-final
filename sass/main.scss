@@ -262,7 +262,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
-// REMOVE THEME COLOR
+$code-color: #3c5064; // metal
 
 // ADD CLASSES FOR COLOR PALETTE
 @each $color, $val in $colors {
