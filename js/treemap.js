@@ -48,13 +48,6 @@ const tooltip = d3
   .attr("class", "tooltip")
   .style("opacity", 0);
 
-// bootstrap tooltip
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]'
-);
-const tooltipList = [...tooltipTriggerList].map(
-  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-);
 // --------------------------------------------------------
 // LOAD DATA + PERFORM FUNCTIONS
 // --------------------------------------------------------
@@ -194,7 +187,6 @@ function drawTreemap() {
     .append("svg")
     .attr("viewBox", "0 0 " + svgWidth + " " + svgHeight)
     .attr("preserveAspectRatio", "xMidYMid meet");
-  // .append("g");
 
   const treemap = d3
     .treemap()
@@ -207,7 +199,7 @@ function drawTreemap() {
     .hierarchy(data)
     .sum((d) => (d.value ? 1 : 0))
     .sort((a, b) => b.height - a.height || b.value - a.value);
-  console.log("nodes:", nodes);
+  // console.log("nodes:", nodes);
 
   treemap(nodes);
 
@@ -224,7 +216,7 @@ function drawTreemap() {
     .attr("title", function (d) {
       return d.data.name ? d.data.name : "null";
     });
-  console.log("cells:", cells);
+  // console.log("cells:", cells);
 
   cells
     .style("left", function (d) {
@@ -248,6 +240,12 @@ function drawTreemap() {
   // --------------------------------------------------------
   // TOOL TIP
   // --------------------------------------------------------
+  // const tooltip = chart
+  //   .selectAll(".node")
+  //   .append("div")
+  //   .attr("class", "tooltip level-" + d.depth)
+  //   .style("opacity", 0);
+
   cells
     .on("mouseover", function (event, d) {
       // Show the tooltip on mouseover for depths other than 0
@@ -256,6 +254,13 @@ function drawTreemap() {
 
         // Customize the tooltip content based on depth
         let tooltipContent = "";
+
+        // Adjust the tooltip position based on cell position
+        // const tooltipX = x(d.x0) + margin.left;
+        // const tooltipY = y(d.y0) + margin.top;
+        const tooltipX = x(d.x0);
+        const tooltipY = y(d.y0);
+
         if (d.depth === 1) {
           tooltipContent = `
           ${d.data.children[0].georegion || "Unknown region"} (${
@@ -275,7 +280,13 @@ function drawTreemap() {
           <h3>${d.parent.data.name}</h3>`;
         }
         // CSS style (.treemap-container .tooltip)
-        tooltip.html(tooltipContent);
+        tooltip
+          .style("left", tooltipX + "px")
+          .style("top", tooltipY + "px")
+          .html(tooltipContent)
+          .transition()
+          .duration(200)
+          .style("opacity", 0.9);
       }
     })
     .on("mouseout", function () {
