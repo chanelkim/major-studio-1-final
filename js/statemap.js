@@ -53,21 +53,27 @@ function drawMap(us, statecount) {
     .scaleSequential(customInterpolator)
     .domain([countMin, countMax]);
 
+  // --------------------------------------------------------
+  // HASH PATTERN
+  // --------------------------------------------------------
   // Define a hash pattern for zero count
-  svg
+  const hashPattern = svg
     .append("defs")
     .append("pattern")
     .attr("id", "hashPattern")
     .attr("patternUnits", "userSpaceOnUse")
     .attr("width", 15)
-    .attr("height", 15)
+    .attr("height", 15);
+
+  // Add a rectangle to the hash pattern
+  hashPattern
     .append("rect")
     .attr("width", 15)
     .attr("height", 15)
     .attr("fill", "#C8D2DC"); // grey
 
   // Add lines to the hash pattern
-  d3.select("#hashPattern")
+  hashPattern
     .append("line")
     .attr("x1", 0)
     .attr("y1", 0)
@@ -77,7 +83,7 @@ function drawMap(us, statecount) {
     .attr("stroke-width", 1);
 
   // Add lines to the hash pattern
-  d3.select("#hashPattern")
+  hashPattern
     .append("line")
     .attr("x1", 0)
     .attr("y1", 15)
@@ -283,18 +289,39 @@ function handleMouseOut(event, d) {
   customTooltip.style.display = "none";
 }
 
-// --------------------------------------------------------
-// ASYNC LOAD DATA + DRAW MAP
-// --------------------------------------------------------
-async function loadData() {
-  const us = await d3.json("data/us.json");
-  const statecount = await d3.json("data/stateCount.json");
-  const stateindex = await d3.json("data/IoAD_merged_geo_data.json");
+// // --------------------------------------------------------
+// // ASYNC LOAD DATA + DRAW MAP
+// // --------------------------------------------------------
+// async function loadData() {
+//   const us = await d3.json("data/us.json");
+//   const statecount = await d3.json("data/stateCount.json");
+//   const stateindex = await d3.json("data/IoAD_merged_geo_data.json");
 
-  console.log("US geography data:", us);
-  console.log("State count data:", statecount);
-  drawMap(us, statecount, stateindex);
+//   console.log("US geography data:", us);
+//   console.log("State count data:", statecount);
+//   drawMap(us, statecount, stateindex);
+// }
+
+// loadData();
+
+// --------------------------------------------------------
+// SYNC LOAD DATA + DRAW MAP
+// --------------------------------------------------------
+function loadData() {
+  // Use Promise.all to load data concurrently
+  Promise.all([
+    d3.json("data/us.json"),
+    d3.json("data/stateCount.json"),
+    d3.json("data/IoAD_merged_geo_data.json"),
+  ])
+    .then(([us, statecount, stateindex]) => {
+      console.log("US geography data:", us);
+      console.log("State count data:", statecount);
+      drawMap(us, statecount, stateindex);
+    })
+    .catch((error) => {
+      console.error("Error loading data:", error);
+    });
 }
 
 loadData();
-// drawMap(usdata, statecountdata);

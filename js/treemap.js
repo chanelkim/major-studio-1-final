@@ -7,7 +7,6 @@
 //   console.log("treemapData is available");
 // }
 console.log("Using treemapData in otherScript:", window.treemapData);
-console.log("Using GLOBAL TREEMAP in treemap.js:", TREEMAP);
 
 // ********************************************************
 // Treemap
