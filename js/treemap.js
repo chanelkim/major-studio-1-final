@@ -304,9 +304,16 @@ function drawTreemap() {
           containerHeight - tooltipHeight
         );
 
+        // Check if overflow should be auto at certain depths
+        const allowOverflowAtDepth = d.depth >= 1; /* your depth threshold */
+
+        // Update the overflow property of the treemap container
+        const overflowValue = allowOverflowAtDepth ? "auto" : "hidden";
+        d3.select("#chart").style("overflow", overflowValue);
+
         // Check if the tooltip is near the edges
-        const nearEdgeX = tooltipX < 10 || tooltipX > 90;
-        const nearEdgeY = tooltipY < 10 || tooltipY > 90;
+        const nearEdgeX = tooltipX < 30 || tooltipX > 70;
+        const nearEdgeY = tooltipY < 30 || tooltipY > 70;
 
         // Use adjusted coordinates for edges, otherwise use translated coordinates
         const finalX = nearEdgeX ? adjustedX : translatedX;
@@ -323,9 +330,9 @@ function drawTreemap() {
       }
     })
     .on("mouseout", function () {
-      // Access the tooltip using the variable declared outside the function
       const currentTooltip = tooltip;
-      // Hide the tooltip on mouseout
+      // Reset the overflow property when the mouse leaves the treemap
+      d3.select("#chart").style("overflow", "hidden");
       currentTooltip.transition().duration(500).style("opacity", 0);
     });
 
@@ -499,8 +506,11 @@ function preloadHigherResolutionImages(data) {
 // Adjust treemap-nav position based on scroll offset
 document.getElementById("chart").addEventListener("scroll", function () {
   const treemapNav = document.getElementById("treemap-nav");
+  // const tooltip = document.getElementByClass("tooltip");
   const scrollTop = this.scrollTop;
   const scrollLeft = this.scrollLeft;
   treemapNav.style.top = `${scrollTop}px`;
   treemapNav.style.left = `${scrollLeft}px`;
+  // tooltip.style.top = `${scrollTop}px`;
+  // tooltip.style.left = `${scrollLeft}px`;
 });
