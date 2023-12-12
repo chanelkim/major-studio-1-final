@@ -100,6 +100,7 @@
   font-family: "FormulaCondensed-Regular", sans-serif;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  border: 1px solid black;
 }
 
 /* --------------- CATALOG ------------- */
