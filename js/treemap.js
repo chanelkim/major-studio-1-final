@@ -155,6 +155,26 @@ function analyzeData() {
 
   hierarchicalData = formatDataForHierarchy();
   console.log("hierarchicalData:", hierarchicalData);
+
+  // --------------------------------------------------------
+  // PRELOAD IMAGES
+  // --------------------------------------------------------
+  // Extract the array of artist objects from the hierarchicalData
+  const artistArray = hierarchicalData.children;
+
+  // Extract and flatten the array of imagematch URLs from each artist's children
+  console.log("Artist Array:", artistArray);
+  const imagematchUrls = artistArray.flatMap((artist) =>
+    artist && artist.children
+      ? artist.children.map((child) => child && child.imagematch)
+      : []
+  );
+
+  // Call the preloadImages function when the page is initiated
+  window.addEventListener("load", function () {
+    preloadImages(hierarchicalData);
+    preloadHigherResolutionImages(imagematchUrls);
+  });
 }
 
 // --------------------------------------------------------
@@ -411,6 +431,7 @@ function flattenDataAtDepth(node, targetDepth, currentDepth = 0) {
 
 // Function to preload higher-resolution images
 function preloadHigherResolutionImages(data) {
+  console.log("Input data:", data);
   if (!data || !Array.isArray(data)) {
     console.error("Invalid data for preloading images:", data);
     return;
@@ -423,25 +444,13 @@ function preloadHigherResolutionImages(data) {
   higherResolutionImageUrls.forEach((url) => {
     const img = new Image();
     img.src = url;
+    console.log("Higher resolution image URLs:", higherResolutionImageUrls);
   });
 }
-// function preloadHigherResolutionImages(data) {
-//   const higherResolutionImageUrls = data
-//     .filter((item) => item.imagematch) // Filter out items without imagematch
-//     .map((item) => item.imagematch.replace("200,200", "999,999"));
 
-//   higherResolutionImageUrls.forEach((url) => {
-//     const img = new Image();
-//     img.src = url;
-//   });
-// }
-
-// Call the preloadImages function when the page is initiated
-window.addEventListener("load", function () {
-  preloadImages(hierarchicalData);
-  preloadHigherResolutionImages(hierarchicalData);
-});
-
+// --------------------------------------------------------
+// TREEMAP NAV
+// --------------------------------------------------------
 // Adjust treemap-nav position based on scroll offset
 document.getElementById("chart").addEventListener("scroll", function () {
   const treemapNav = document.getElementById("treemap-nav");

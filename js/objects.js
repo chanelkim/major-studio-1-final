@@ -27,37 +27,9 @@ var svg = d3
   .append("g");
 //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// // Select the button element by its ID
-// const loadButton = document.getElementById("load-json-button");
-
-// // Select the UL element for displaying the keys
-// const keyList = document.getElementById("key-list");
-
-// // Add a click event listener to the button
-// loadButton.addEventListener("click", () => {
-//   // Define the path to your JSON file
-//   const jsonFilePath = "data/textLinks-results-v2.json";
-
-//   // Use D3.js to load the JSON file
-//   d3.json(jsonFilePath).then((data) => {
-//     // Log the loaded JSON object to the console
-//     console.log(data);
-
-//     // Extract the keys of the JSON object
-//     const keys = Object.keys(data[0]);
-
-//     // Clear any previous content from the list
-//     keyList.innerHTML = "";
-
-//     // Create list items for each key and append them to the UL
-//     keys.forEach((key) => {
-//       const listItem = document.createElement("p");
-//       listItem.textContent = key;
-//       keyList.appendChild(listItem);
-//     });
-//   });
-// });
-
+// --------------------------------------------------------
+// LOAD DATA
+// --------------------------------------------------------
 // Load the JSON files
 const stemmedWordsPath = "data/textLinks-results-v2.json";
 const titlesDataPath = "data/IoAD_merged_geo_data.json";
@@ -123,7 +95,9 @@ d3.json(titlesDataPath).then((titlesData) => {
   });
 });
 
-//---------------APP FUNCTION---------------
+// --------------------------------------------------------
+// APP
+// --------------------------------------------------------
 // this function creates all of our DOM elements
 function displayImages(json) {
   // select a <div> with an id of "app"
@@ -146,7 +120,27 @@ function displayImages(json) {
     }
   });
 
-  //---------------CARDS---------------
+  // --------------------------------------------------------
+  // CARDS
+  // --------------------------------------------------------
+  // Append images to the DOM and observe them for lazy loading
+  const cards = app
+    .select("#chart-objects")
+    .selectAll("div.card")
+    .data(data)
+    .join("div")
+    .attr("class", "card");
+
+  cards
+    .append("div")
+    .attr("class", "image")
+    .each(function (d) {
+      d3.select(this).append("img").attr("data-src", d.imagematch); // Use data-src attribute for lazy loading
+
+      // Observe each image for lazy loading
+      imageObserver.observe(this);
+    });
+
   // define "cards" for each item
   let card = app
     .selectAll("div.card")
@@ -200,3 +194,33 @@ function displayImages(json) {
       return `(${d.beginyear} - ${d.endyear})`;
     });
 }
+// --------------------------------------------------------
+// LAZY LOADING
+// --------------------------------------------------------
+// Function to handle image lazy loading
+function lazyLoadImage(target) {
+  const image = target.querySelector("img");
+  const imageUrl = image.dataset.src;
+
+  if (imageUrl) {
+    image.src = imageUrl;
+    image.removeAttribute("data-src");
+  }
+}
+
+// Intersection Observer configuration
+const observerConfig = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.2, // Adjust as needed
+};
+
+// Create an Intersection Observer
+const imageObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      lazyLoadImage(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerConfig);
