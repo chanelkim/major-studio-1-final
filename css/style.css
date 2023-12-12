@@ -1,3 +1,10 @@
+.code-note {
+  color: gray;
+  font-size: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
 .svg {
   background-color: white;
   /* overflow: hidden; */
@@ -210,10 +217,6 @@
   stroke: black;
   transition: all 0.25s ease-in-out;
 }
-/* .state:hover {
-  cursor: pointer;
-  fill: #64281e;
-} */
 .statemap-container {
   position: relative;
   width: calc(100% - 0 * 2 * 1px);

@@ -271,8 +271,8 @@ function handleMouseOver(event, d) {
 
   const [x, y] = d3.pointer(event);
   customTooltip.style.display = "block";
-  customTooltip.style.left = x + 20 + "px";
-  customTooltip.style.top = y + 20 + "px";
+  customTooltip.style.left = x + 10 + "px";
+  customTooltip.style.top = y + 10 + "px";
 }
 
 function handleMouseOut(event, d) {
